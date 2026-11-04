@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Mom's Kitchen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Lora:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Yesteryear&display=swap">
+<link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="gingham"></div>
+  <div class="masthead-inner">
+    <a class="brand" href="#/">
+      <span class="brand-script">Recipes from Novella's table</span>
+      <span class="brand-title">Mom's Kitchen</span>
+      <span class="brand-sub"><span class="star">&#10022;</span> 60 Years of Recipes <span class="star">&#10022;</span></span>
+    </a>
+  </div>
+  <nav class="tabs" aria-label="Sections">
+    <a href="#/" data-tab="home">Recipe Box</a>
+    <a href="#/add" data-tab="add">Add a Family Recipe</a>
+    <a href="#/plan" data-tab="plan">Meal Planner</a>
+  </nav>
+  <div class="scallop"></div>
+</header>
+
+<main>
+  <!-- Home: welcome, search and the recipe box -->
+  <section id="home">
+    <section class="welcome">
+      <figure class="portrait">
+        <img id="portrait" alt="Novella as a young woman">
+        <figcaption id="portrait-caption"></figcaption>
+      </figure>
+      <div class="welcome-text">
+        <h2>Pull up a chair &mdash; supper's on the table.</h2>
+        <div id="foreword"></div>
+        <button id="foreword-toggle" class="link-button" type="button">Read the rest of Mom's story</button>
+      </div>
+    </section>
+
+    <form class="finder" id="finder" role="search" onsubmit="return false">
+      <div class="finder-head">
+        <h2>Find a Recipe</h2>
+        <span class="finder-hand">from the kitchen of Novella</span>
+      </div>
+      <div class="finder-fields">
+        <label>
+          <span>By name</span>
+          <input id="q-name" type="search" placeholder="e.g. Tamale Pie, or a number like 87" autocomplete="off">
+        </label>
+        <label>
+          <span>By ingredient</span>
+          <input id="q-ingredient" type="search" placeholder="e.g. chicken, rice" autocomplete="off">
+        </label>
+        <label>
+          <span>By type</span>
+          <select id="q-type"><option value="">All types</option></select>
+        </label>
+        <label>
+          <span>By nutrition</span>
+          <select id="q-nutrition" class="nutrition-pick"></select>
+        </label>
+        <label>
+          <span>From</span>
+          <select id="q-library">
+            <option value="">Mom's book &amp; family recipes</option>
+            <option value="book">Mom's book only</option>
+            <option value="family">Family recipes only</option>
+          </select>
+        </label>
+      </div>
+      <div id="q-custom" class="custom-nutrition" hidden></div>
+      <div class="finder-foot">
+        <label class="check"><input id="q-tried" type="checkbox"> Only Mom's tried &amp; true</label>
+        <span id="count" class="count" aria-live="polite"></span>
+        <button id="clear" class="link-button" type="button">Clear search</button>
+      </div>
+    </form>
+
+    <div id="results" class="cards"></div>
+    <p id="empty" class="empty" hidden>No recipes match that search. Try fewer words, or separate ingredients with commas.</p>
+  </section>
+
+  <!-- One recipe -->
+  <article id="recipe" class="recipe" hidden></article>
+
+  <!-- Add or change a family recipe -->
+  <section id="add" class="sheet" hidden>
+    <div class="sheet-head">
+      <h1 id="add-title">Add a Family Recipe</h1>
+      <p class="sheet-hand">Type it in, or scan the card with your phone and check what it read.</p>
+    </div>
+    <p id="add-offline" class="warning" hidden>Family recipes can't be saved right now. The website has to be started with <b>py serve.py</b> on the computer that runs it.</p>
+
+    <div class="scan-box">
+      <div>
+        <h2>Scan a recipe card</h2>
+        <p>Take a picture of the card (or pick one from your photos). Lay it flat in good light. A recipe on two sides? Add both pictures.</p>
+      </div>
+      <label class="button">
+        <input id="scan-input" type="file" accept="image/*" capture="environment" multiple hidden>
+        &#128247; Scan a card
+      </label>
+      <div id="scan-status" class="scan-status" aria-live="polite"></div>
+      <div id="scan-thumbs" class="scan-thumbs"></div>
+    </div>
+
+    <form id="add-form" class="recipe-form" autocomplete="off">
+      <input type="hidden" name="id">
+      <div class="form-grid">
+        <label class="wide"><span>Recipe name *</span><input name="title" required placeholder="e.g. Aunt Ruth's Pecan Pie"></label>
+        <label><span>Type</span><select name="type" id="f-type"></select></label>
+        <label><span>Shared by</span><input name="credit" placeholder="e.g. Aunt Ruth"></label>
+        <fieldset class="wide meal-boxes">
+          <legend>Good for (used by the Meal Planner)</legend>
+          <label class="check"><input type="checkbox" name="meal" value="breakfast"> Breakfast</label>
+          <label class="check"><input type="checkbox" name="meal" value="lunch"> Lunch</label>
+          <label class="check"><input type="checkbox" name="meal" value="dinner"> Dinner</label>
+          <label class="check"><input type="checkbox" name="meal" value="side"> Side dish</label>
+          <label class="check"><input type="checkbox" name="meal" value="dessert"> Dessert</label>
+        </fieldset>
+        <label><span>Serves</span><input name="serves" placeholder="e.g. 6 servings"></label>
+        <label><span>Prep time</span><input name="prep" placeholder="e.g. 20 min"></label>
+        <label><span>Cook time</span><input name="cook" placeholder="e.g. 1 hour"></label>
+        <label class="wide"><span>A line about it</span><input name="blurb" placeholder="e.g. Grandma made this every Thanksgiving."></label>
+        <label class="wide"><span>Ingredients &mdash; one per line</span>
+          <textarea name="ingredients" rows="9" placeholder="1 lb ground beef&#10;1 onion, chopped&#10;&#10;A line ending in a colon starts a new part, like:&#10;Topping:&#10;1 cup shredded cheese"></textarea></label>
+        <label class="wide"><span>Directions &mdash; one step per line</span>
+          <textarea name="steps" rows="9" placeholder="Brown the beef and onion.&#10;Stir in the rest and bake at 350° for 30 minutes."></textarea></label>
+        <label class="wide"><span>Tip</span><input name="tip"></label>
+        <label class="wide"><span>Notes</span><textarea name="notes" rows="2" placeholder="Anything you want to remember about it"></textarea></label>
+        <fieldset class="wide nutrition-entry">
+          <legend>Nutrition per serving (optional &mdash; leave blank if you don't know)</legend>
+          <div id="f-nutrition" class="nutrition-fields"></div>
+        </fieldset>
+        <div class="wide photo-row">
+          <label class="button light">
+            <input id="dish-input" type="file" accept="image/*" hidden> Add a photo of the dish
+          </label>
+          <div id="dish-preview" class="photo-preview"></div>
+          <label class="check" id="keep-card-row" hidden><input type="checkbox" id="keep-card" checked> Keep the scanned card with the recipe</label>
+        </div>
+      </div>
+      <div class="form-foot">
+        <button class="button" type="submit" id="save-recipe">Save recipe</button>
+        <a class="link-button" href="#/" id="cancel-add">Cancel</a>
+        <span id="save-status" class="save-status" aria-live="polite"></span>
+      </div>
+    </form>
+  </section>
+
+  <!-- Meal planner -->
+  <section id="plan" class="sheet" hidden>
+    <div class="sheet-head">
+      <h1>Meal Planner</h1>
+      <p class="sheet-hand">Pick the meals, the days and what you're in the mood for &mdash; supper's planned.</p>
+    </div>
+
+    <form id="plan-form" class="plan-form" onsubmit="return false">
+      <div class="plan-step">
+        <h2><span class="step-no">1</span> Which meals?</h2>
+        <div class="choice-row">
+          <label class="pill"><input type="checkbox" name="meal" value="breakfast"> Breakfast</label>
+          <label class="pill"><input type="checkbox" name="meal" value="lunch"> Lunch</label>
+          <label class="pill"><input type="checkbox" name="meal" value="dinner" checked> Dinner</label>
+          <button type="button" class="link-button" id="all-meals">All three</button>
+        </div>
+        <div class="choice-row small">
+          <label class="check"><input type="checkbox" name="extra" value="side"> Add a side dish to each dinner</label>
+          <label class="check"><input type="checkbox" name="extra" value="dessert"> Add a dessert to each dinner</label>
+        </div>
+      </div>
+      <div class="plan-step">
+        <h2><span class="step-no">2</span> For how long?</h2>
+        <div class="choice-row">
+          <label class="pill"><input type="radio" name="span" value="day"> A day</label>
+          <label class="pill"><input type="radio" name="span" value="week" checked> A week</label>
+          <label class="pill"><input type="radio" name="span" value="month"> A month</label>
+          <label class="inline"><span>Starting</span> <input type="date" id="plan-start" required></label>
+        </div>
+      </div>
+      <div class="plan-step">
+        <h2><span class="step-no">3</span> Choose recipes by <small>(all optional)</small></h2>
+        <div class="finder-fields">
+          <label><span>Ingredient</span><input id="p-ingredient" type="search" placeholder="e.g. chicken"></label>
+          <label><span>Type</span><select id="p-type"><option value="">Any type</option></select></label>
+          <label><span>Nutrition</span><select id="p-nutrition" class="nutrition-pick"></select></label>
+          <label><span>From</span>
+            <select id="p-library">
+              <option value="">Mom's book &amp; family recipes</option>
+              <option value="book">Mom's book only</option>
+              <option value="family">Family recipes only</option>
+            </select></label>
+        </div>
+        <div id="p-custom" class="custom-nutrition" hidden></div>
+        <label class="check"><input id="p-tried" type="checkbox"> Only Mom's tried &amp; true</label>
+      </div>
+      <div class="form-foot">
+        <button class="button" type="button" id="make-plan">Plan my meals</button>
+        <span id="plan-warning" class="save-status" aria-live="polite"></span>
+      </div>
+    </form>
+
+    <div id="plan-result" hidden>
+      <div class="plan-bar">
+        <h2 id="plan-heading"></h2>
+        <div class="plan-actions">
+          <button class="button" type="button" id="to-list">Next: shopping list &rarr;</button>
+          <button class="button light" type="button" id="print-plan">Print the plan</button>
+          <button class="link-button" type="button" id="new-plan">Start over</button>
+        </div>
+      </div>
+      <p class="hint">Don't fancy something? Tap &#8635; to swap it for another recipe.</p>
+      <div id="plan-table" class="plan-table"></div>
+    </div>
+  </section>
+
+  <!-- Shopping list for the plan -->
+  <section id="list" class="sheet" hidden>
+    <div class="sheet-head">
+      <h1>Shopping List</h1>
+      <p class="sheet-hand">Mark what's already in the pantry &mdash; the rest goes on the list.</p>
+    </div>
+    <div class="plan-bar">
+      <a class="link-button" href="#/plan">&larr; Back to the plan</a>
+      <span id="list-count" class="count"></span>
+    </div>
+    <div class="list-tools">
+      <button class="link-button" type="button" id="all-need">Mark everything "Need"</button>
+      <button class="link-button" type="button" id="all-have">Mark everything "Have"</button>
+    </div>
+    <div id="shopping"></div>
+    <div class="print-box">
+      <h2>All set? Print what you need</h2>
+      <div class="plan-actions">
+        <button class="button" type="button" id="print-list">Print the shopping list</button>
+        <button class="button light" type="button" id="print-plan-2">Print the plan</button>
+        <button class="button light" type="button" id="print-cards">Print the recipe cards</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Filled in just before printing a plan, list or recipe cards -->
+<div id="print-area"></div>
+
+<footer class="footer">
+  <div class="gingham thin"></div>
+  <p>Made with love for Mom &middot; Norma Novella Kaplan</p>
+  <p class="fine">Dish pictures are AI illustrations of how each recipe should turn out. Nutrition values are estimates.</p>
+</footer>
+
+<script src="recipes.js?v=9"></script>
+<script src="app.js?v=3"></script>
+</body>
+</html>
