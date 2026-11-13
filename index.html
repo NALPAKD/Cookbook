@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Lora:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Yesteryear&display=swap">
-<link rel="stylesheet" href="style.css?v=3">
+<link rel="stylesheet" href="style.css?v=6">
 </head>
 <body>
 
@@ -69,9 +69,11 @@
         <label>
           <span>From</span>
           <select id="q-library">
-            <option value="">Mom's book &amp; family recipes</option>
+            <option value="">All recipes</option>
+            <option value="mine">Mom's book &amp; family recipes</option>
             <option value="book">Mom's book only</option>
             <option value="family">Family recipes only</option>
+            <option value="searchlight">Searchlight recipes only</option>
           </select>
         </label>
       </div>
@@ -193,9 +195,11 @@
           <label><span>Nutrition</span><select id="p-nutrition" class="nutrition-pick"></select></label>
           <label><span>From</span>
             <select id="p-library">
-              <option value="">Mom's book &amp; family recipes</option>
+              <option value="">All recipes</option>
+              <option value="mine">Mom's book &amp; family recipes</option>
               <option value="book">Mom's book only</option>
               <option value="family">Family recipes only</option>
+              <option value="searchlight">Searchlight recipes only</option>
             </select></label>
         </div>
         <div id="p-custom" class="custom-nutrition" hidden></div>
@@ -256,7 +260,9 @@
   <p class="fine">Dish pictures are AI illustrations of how each recipe should turn out. Nutrition values are estimates.</p>
 </footer>
 
-<script src="recipes.js?v=9"></script>
-<script src="app.js?v=3"></script>
+<!-- Add ?original to the address to see the descriptions from before the rewrite. -->
+<script>document.write('<script src="' + (/[?&]original\b/.test(location.search) && !window.MomsKitchenApp ? "recipes_original.js" : "recipes.js") + '?v=11"><\/script>');</script>
+<script src="searchlight.js?v=8"></script>
+<script src="app.js?v=7"></script>
 </body>
 </html>

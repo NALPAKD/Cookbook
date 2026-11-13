@@ -200,6 +200,7 @@ main { max-width: 1120px; margin: 0 auto; padding: 34px 16px 56px; }
 .recipe h1 { font-size: clamp(32px, 5vw, 46px); color: var(--accent); }
 .blurb { font-style: italic; color: var(--muted); margin: 10px 0 0; }
 .credit { font-size: 14px; color: var(--muted); margin: 6px 0 0; }
+.blurb .signed { font: 700 22px/1 "Caveat", cursive; font-style: normal; color: var(--accent); white-space: nowrap; }
 .meta { display: flex; flex-wrap: wrap; gap: 10px; margin: 18px 0 26px; }
 .meta span { background: var(--accent-soft); border-radius: 999px; padding: 4px 14px; font-size: 14.5px; }
 .meta b { color: var(--accent); margin-right: 6px; font-weight: 600; }
@@ -442,3 +443,50 @@ fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
   .p-cols .group { font-size: 9pt; margin: 6pt 0 2pt; }
   .p-tip { font-size: 9.5pt; margin: 6pt 0 0; }
 }
+
+/* ---------- Searchlight recipes: blue plaid, so they never get mixed up with Mom's ---------- */
+:root {
+  --sl-blue: #2f5d8a;
+  --sl-blue-dark: #1f3f60;
+  --sl-blue-soft: #e6eef7;
+  --sl-plaid:
+    repeating-linear-gradient(90deg, rgba(47, 93, 138, 0.22) 0 14px, transparent 14px 28px, rgba(31, 63, 96, 0.30) 28px 32px, transparent 32px 46px),
+    repeating-linear-gradient(0deg, rgba(47, 93, 138, 0.22) 0 14px, transparent 14px 28px, rgba(31, 63, 96, 0.30) 28px 32px, transparent 32px 46px);
+}
+.card.searchlight { background-color: var(--sl-blue-soft); background-image: var(--sl-plaid); outline: 3px solid var(--sl-blue); outline-offset: -3px; }
+.card.searchlight .card-body { background: rgba(255, 255, 255, 0.9); margin: 0 10px 10px; border-radius: 0 0 4px 4px; }
+.card.searchlight .pic { border-bottom-color: var(--sl-blue); }
+.card.searchlight .ribbon { background: var(--sl-blue); }
+.card.searchlight .kicker, .recipe.searchlight .kicker { color: var(--sl-blue); }
+.searchlight .recipe-no { background: var(--sl-blue); }
+.card.searchlight .no-pic, .recipe.searchlight .no-pic {
+  background-color: var(--sl-blue-soft); background-image: var(--sl-plaid);
+}
+.card.searchlight .no-pic svg circle:first-child, .recipe.searchlight .no-pic svg circle:first-child { stroke: var(--sl-blue); }
+.card.searchlight .no-pic svg path, .card.searchlight .no-pic svg rect, .card.searchlight .no-pic svg circle:last-child,
+.recipe.searchlight .no-pic svg path, .recipe.searchlight .no-pic svg rect, .recipe.searchlight .no-pic svg circle:last-child { fill: var(--sl-blue); }
+
+/* The recipe page: a blue plaid frame around the whole recipe */
+.recipe.searchlight { background-color: var(--sl-blue-soft); background-image: var(--sl-plaid); padding: 14px; border-radius: 6px; }
+.recipe.searchlight .recipe-main { background: var(--card); }
+.recipe.searchlight h1, .recipe.searchlight h2 { color: var(--sl-blue-dark); }
+.recipe.searchlight .from-kitchen { color: var(--sl-blue); }
+.recipe.searchlight .credit { color: var(--sl-blue); }
+.recipe.searchlight .steps li::marker { color: var(--sl-blue); }
+.recipe.searchlight .recipe-top { background: var(--card); }
+.recipe.searchlight .recipe-hero { border-bottom-color: var(--sl-blue); }
+.recipe.searchlight .from-kitchen { border-bottom-color: var(--sl-blue); }
+/* Inside a Searchlight card or recipe, every red accent turns blue */
+.card.searchlight, .recipe.searchlight { --accent: var(--sl-blue); --accent-soft: var(--sl-blue-soft); --sage: var(--sl-blue-dark); }
+
+/* "Make a picture of this dish" (Searchlight recipes without a picture) */
+.picture-maker { background: var(--card); margin: 0 0 14px; padding: 14px 16px; border-radius: 6px; text-align: center; }
+.picture-maker .key-box { max-width: 460px; margin: 0 auto; display: grid; gap: 8px; text-align: left; }
+.picture-maker .key-box label { font-weight: 600; color: var(--sl-blue-dark); }
+.picture-maker .key-box input { font: inherit; padding: 8px 10px; border: 2px solid var(--sl-blue); border-radius: 4px; width: 100%; box-sizing: border-box; }
+.picture-maker .key-box .fine { margin: 0; }
+.picture-maker .button { background: var(--sl-blue); }
+.picture-status { margin: 8px 0 0; min-height: 1.2em; color: var(--sl-blue-dark); }
+.picture-status:empty { display: none; }
+.picture-status.bad { color: #9b2e2e; }
+@media print { .picture-maker { display: none; } }

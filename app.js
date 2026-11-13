@@ -1,6 +1,11 @@
 /* Mom's Kitchen website: the recipe box, family recipes, the meal planner and the shopping list. */
 (function () {
   var book = window.COOKBOOK;
+  /* The Searchlight recipes (searchlight.js) are a separate collection, shown in blue plaid. */
+  var searchlight = window.SEARCHLIGHT || { types: [], recipes: [] };
+  searchlight.types.forEach(function (t) {
+    if (!book.types.some(function (x) { return x.id === t.id; })) book.types.push(t);
+  });
   var $ = function (id) { return document.getElementById(id); };
   var typeTitle = {};
   book.types.forEach(function (t) { typeTitle[t.id] = t.title; });
@@ -29,9 +34,15 @@
     if (word.length > 3 && /s$/.test(word) && !/ss$/.test(word)) return word.slice(0, -1);
     return word;
   }
-  /* Mom's recipes are No. 1, 2, 3… as in the book; family recipes are F1, F2… */
+  /* Mom's recipes are No. 1, 2, 3… as in the book; family recipes are F1, F2…; Searchlight S1, S2… */
   function numberOf(r) {
-    return r.number == null ? "" : (r.family ? "F" : "") + r.number;
+    return r.number == null ? "" : (r.family ? "F" : r.searchlight ? "S" : "") + r.number;
+  }
+  function kitchenOf(r) {
+    return r.family ? (r.credit || "the family") : r.searchlight ? "the Household Searchlight" : "Novella";
+  }
+  function collectionClass(r) {
+    return r.family ? " family" : r.searchlight ? " searchlight" : "";
   }
   function numberTag(r) {
     return numberOf(r) ? '<span class="recipe-no">No. ' + numberOf(r) + "</span>" : "";
@@ -48,12 +59,14 @@
   }
 
   /* ---------- Which meals a recipe suits (for the planner) ---------- */
-  var MORNING = /breakfast|coffee cake|braid|egg casserole|pancake|waffle|muffin|french toast|biscuit|omelet|granola|oatmeal|quiche|danish|cinnamon roll/i;
+  var MORNING = /breakfast|griddle|doughnut|scone|popover|coffee cake|braid|egg casserole|pancake|waffle|muffin|french toast|biscuit|omelet|granola|oatmeal|quiche|danish|cinnamon roll/i;
   function mealsOf(r) {
     if (r.family && r.meal && r.meal.length) return r.meal;
     if (r.type === "breakfast") return MORNING.test(r.title) ? ["breakfast"] : ["lunch"];
     if (r.type === "sides") return /dressing/i.test(r.title) ? [] : ["side"];
-    if (r.type === "cookies" || r.type === "cakes-pies") return ["dessert"];
+    if (r.type === "cookies" || r.type === "cakes-pies" || r.type === "desserts") return ["dessert"];
+    if (r.type === "breads") return MORNING.test(r.title) ? ["breakfast"] : ["side"];
+    if (r.type === "appetizers" || r.type === "canning") return [];
     return ["lunch", "dinner"];
   }
   var MEAL_NAME = { breakfast: "Breakfast", lunch: "Lunch", dinner: "Dinner", side: "Side dish", dessert: "Dessert" };
@@ -73,8 +86,15 @@
     return r;
   }
   book.recipes.forEach(prepare);
+  searchlight.recipes.forEach(function (r) {
+    r.searchlight = true;
+    r.tried = false;
+    r.notes = r.notes || [];
+    r.times = r.times || {};
+    prepare(r);
+  });
   function rebuild() {
-    recipes = book.recipes.concat(family).sort(function (a, b) { return a._name < b._name ? -1 : 1; });
+    recipes = book.recipes.concat(searchlight.recipes, family).sort(function (a, b) { return a._name < b._name ? -1 : 1; });
   }
   function byId(id) { return recipes.find(function (x) { return x.id === id; }); }
 
@@ -97,6 +117,27 @@
       .then(rebuild);
   }
   rebuild();
+
+  /* Pictures made for Searchlight recipes are kept by serve.py in searchlight-img/. */
+  var picturesOnline = false;
+  function loadPictures() {
+    return fetch("api/searchlight-images", { cache: "no-store" })
+      .then(function (res) { if (!res.ok) throw new Error(res.status); return res.json(); })
+      .then(function (index) {
+        picturesOnline = true;
+        searchlight.recipes.forEach(function (r) { if (index[r.id]) r.image = index[r.id]; });
+      })
+      .catch(function () {
+        /* No serve.py (the GitHub copy): show the pictures already made, but no button. */
+        picturesOnline = false;
+        return fetch("searchlight-img/index.json", { cache: "no-store" })
+          .then(function (res) { if (!res.ok) throw new Error(res.status); return res.json(); })
+          .then(function (index) {
+            searchlight.recipes.forEach(function (r) { if (index[r.id]) r.image = index[r.id]; });
+          })
+          .catch(function () {});
+      });
+  }
 
   /* ---------- Nutrition filters ---------- */
   var NUTRIENTS = [
@@ -150,17 +191,20 @@
 
   /* Every search tool uses this: name, ingredient, type, nutrition, library, tried & true. */
   function matches(r, f) {
-    var asNumber = f.name && f.name.match(/^(?:no\.?\s*|#)?(f?)\s*(\d+)$/);     // "12", "#12", "no. 12", "f3"
+    var asNumber = f.name && f.name.match(/^(?:no\.?\s*|#)?([fs]?)\s*(\d+)$/);     // "12", "#12", "no. 12", "f3", "s7"
     if (asNumber) {
-      if (String(r.number) !== String(+asNumber[2]) || !!asNumber[1] !== !!r.family) return false;
+      if (String(r.number) !== String(+asNumber[2]) || (asNumber[1] === "f") !== !!r.family ||
+          (asNumber[1] === "s") !== !!r.searchlight) return false;
     } else if (f.name && f.name.split(/\s+/).some(function (w) { return r._name.indexOf(stem(w)) < 0; })) return false;
     var wanted = plain(f.ingredient || "").split(/[,;]+| and /).map(function (s) { return s.trim(); }).filter(Boolean);
     if (wanted.some(function (term) {
       return term.split(/\s+/).some(function (w) { return r._ingredients.indexOf(stem(w)) < 0; });
     })) return false;
     if (f.type && r.type !== f.type) return false;
-    if (f.library === "book" && r.family) return false;
+    if (f.library === "book" && (r.family || r.searchlight)) return false;
     if (f.library === "family" && !r.family) return false;
+    if (f.library === "searchlight" && !r.searchlight) return false;
+    if (f.library === "mine" && r.searchlight) return false;
     if (f.tried && !r.tried) return false;
     return nutritionOk(r, f.nutrition);
   }
@@ -200,9 +244,10 @@
     var f = homeFilter();
     var found = recipes.filter(function (r) { return matches(r, f); });
     $("results").innerHTML = found.map(function (r) {
-      return '<a class="card' + (r.family ? " family" : "") + '" href="#/r/' + r.id + '">' +
+      return '<a class="card' + collectionClass(r) + '" href="#/r/' + r.id + '">' +
         (r.tried ? '<div class="burst"><span>Tried &amp; true</span></div>' : "") +
         (r.family ? '<div class="ribbon">Family recipe</div>' : "") +
+        (r.searchlight ? '<div class="ribbon">Searchlight recipe</div>' : "") +
         '<div class="pic">' + picture(r, r.title) + "</div>" +
         '<div class="card-body"><div class="kicker">' + numberTag(r) + esc(typeTitle[r.type] || "") + "</div>" +
         "<h3>" + esc(r.title) + "</h3>" +
@@ -248,12 +293,16 @@
                   '<button class="link-button" type="button" id="delete-recipe">Delete</button>' : "") +
       '<button class="link-button" type="button" onclick="window.print()">Print this recipe</button></span></div>' +
       '<div class="recipe-hero">' + picture(r, r.title) + "</div>" +
+      (r.searchlight && !r.image && picturesOnline ? pictureMaker() : "") +
       '<div class="recipe-main">' +
       (r.tried ? '<div class="burst"><span>Mom\'s tried &amp; true</span></div>' : "") +
-      '<div class="from-kitchen">From the kitchen of ' + esc(r.family ? (r.credit || "the family") : "Novella") + "</div>" +
-      '<div class="kicker">' + numberTag(r) + (r.family ? "Family recipe &middot; " : "") + esc(typeTitle[r.type] || "") + "</div>" +
+      '<div class="from-kitchen">' + (r.searchlight ? "From the Household Searchlight Recipe Book" :
+        "From the kitchen of " + esc(kitchenOf(r))) + "</div>" +
+      '<div class="kicker">' + numberTag(r) + (r.family ? "Family recipe &middot; " : "") +
+        (r.searchlight ? "Searchlight recipe &middot; " : "") + esc(typeTitle[r.type] || "") + "</div>" +
       "<h1>" + esc(r.title) + "</h1>" +
-      (r.blurb ? '<p class="blurb">' + esc(r.blurb) + "</p>" : "") +
+      (r.blurb ? '<p class="blurb">' + esc(r.blurb) +
+        (r.family || r.searchlight || book.signed === false ? "" : ' <span class="signed">&mdash;&nbsp;' + (r.tried ? "David" : "Mom") + "</span>") + "</p>" : "") +
       (r.credit && !r.family ? '<p class="credit">' + esc(r.credit) + "</p>" : "") +
       '<div class="meta">' +
       (r.serves ? "<span><b>Makes</b>" + esc(r.serves) + "</span>" : "") +
@@ -266,13 +315,15 @@
       (r.tip ? '<div class="tip"><b>Tip:</b> ' + esc(r.tip) + "</div>" : "") +
       "</section></div>" +
       r.notes.map(function (t) {
-        return '<div class="mom-note"><small>' + (r.family ? "Note" : "Mom's note") + "</small>" + esc(t) + "</div>";
+        return '<div class="mom-note"><small>' + (r.family || r.searchlight ? "Note" : "Mom's note") + "</small>" + esc(t) + "</div>";
       }).join("") +
       nutritionLine(r.nutrition) +
       (r.card ? '<figure class="original-card"><figcaption>The original card</figcaption><img src="' + esc(r.card) + '" alt="Scan of the recipe card"></figure>' : "") +
       "</div>";
     $("recipe").innerHTML = html;
+    $("recipe").classList.toggle("searchlight", !!r.searchlight);
     document.title = r.title + " – Mom's Kitchen";
+    if ($("make-picture")) wirePictureMaker(r);
     if (r.family) {
       $("delete-recipe").addEventListener("click", function () {
         if (!confirm('Delete "' + r.title + '" from the family recipes? This can\'t be undone.')) return;
@@ -282,6 +333,98 @@
           .catch(function () { alert("Couldn't delete it. Is the website running with py serve.py?"); });
       });
     }
+  }
+
+  /* ---------- Make a picture for a Searchlight recipe (Venice AI, the person's own key) ----------
+     The key is only kept in this page while it is open: it is never saved or sent to our server. */
+  var veniceKey = "";
+  var VENICE_URL = "https://api.venice.ai/api/v1/image/generate";
+  var VENICE_MODEL = "z-image-turbo";
+  function pictureMaker() {
+    return '<div class="picture-maker" id="picture-maker">' +
+      '<button type="button" class="button" id="make-picture">Make a picture of this dish</button>' +
+      '<div class="key-box" id="key-box" hidden>' +
+      '<label for="venice-key">Your Venice API key</label>' +
+      '<input type="password" id="venice-key" autocomplete="off" spellcheck="false" placeholder="Paste your key here">' +
+      '<button type="button" class="button" id="use-key">Make the picture</button>' +
+      '<p class="fine">The key is only used to ask Venice for this picture. It isn&rsquo;t saved anywhere, and it&rsquo;s forgotten when you close the page.</p>' +
+      "</div>" +
+      '<p class="picture-status" id="picture-status" role="status"></p></div>';
+  }
+  function picturePrompt(r) {
+    var foods = [];
+    r.ingredients.forEach(function (g) { g.items.forEach(function (i) { foods.push(i); }); });
+    var list = foods.slice(0, 10).map(function (i) {
+      return i.replace(/\(.*?\)/g, "").replace(/^[\d½⅓⅔¼¾⅛\s\/-]+/, "").trim();
+    }).filter(Boolean).join(", ");
+    return "Appetizing food photograph of \"" + r.title + "\", a homemade American dish from a 1930s farm-kitchen cookbook" +
+      (typeTitle[r.type] ? " (" + typeTitle[r.type] + ")" : "") + ". Made with: " + list + ". " +
+      "Served on a vintage plate or dish on a wooden kitchen table, soft window light, shallow depth of field, " +
+      "realistic, warm and inviting. No text, no words, no labels, no people, no hands.";
+  }
+  function wirePictureMaker(r) {
+    var status = $("picture-status");
+    function say(text, bad) { status.textContent = text; status.classList.toggle("bad", !!bad); }
+    function start() {
+      if (!veniceKey) {
+        $("key-box").hidden = false;
+        $("make-picture").hidden = true;
+        $("venice-key").focus();
+        return;
+      }
+      generate();
+    }
+    function generate() {
+      $("make-picture").hidden = true;
+      $("key-box").hidden = true;
+      say("Making the picture. This takes about 10 to 30 seconds…");
+      fetch(VENICE_URL, {
+        method: "POST",
+        headers: { "Authorization": "Bearer " + veniceKey, "Content-Type": "application/json" },
+        body: JSON.stringify({
+          model: VENICE_MODEL, prompt: picturePrompt(r),
+          negative_prompt: "text, words, letters, watermark, logo, people, hands, blurry, distorted",
+          width: 1280, height: 640, format: "jpeg", safe_mode: true, hide_watermark: true,
+        }),
+      })
+        .then(function (res) {
+          return res.json().catch(function () { return {}; }).then(function (data) {
+            if (res.status === 401) { veniceKey = ""; throw new Error("Venice didn't accept that key. Check it and try again."); }
+            if (res.status === 402) throw new Error("The Venice account is out of credit.");
+            if (!res.ok || !data.images || !data.images.length) throw new Error("Venice couldn't make the picture" + (data.error ? ": " + data.error : ".") );
+            return "data:image/jpeg;base64," + data.images[0];
+          });
+        })
+        .then(function (dataUrl) {
+          say("Saving the picture…");
+          return fetch("api/searchlight-image", {
+            method: "POST", headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ id: r.id, imageData: dataUrl }),
+          }).then(function (res) {
+            return res.json().then(function (data) {
+              if (!res.ok) throw new Error(data.error || "Couldn't save the picture.");
+              return data.image;
+            });
+          });
+        })
+        .then(function (path) {
+          r.image = path;
+          if (location.hash === "#/r/" + r.id) showRecipe(r);
+          search();
+        })
+        .catch(function (e) {
+          say(e.message || "Something went wrong. Try again.", true);
+          $("make-picture").hidden = false;
+          $("make-picture").textContent = "Try again";
+        });
+    }
+    $("make-picture").addEventListener("click", start);
+    $("use-key").addEventListener("click", function () {
+      veniceKey = $("venice-key").value.trim();
+      if (!veniceKey) { say("Paste your Venice API key first.", true); return; }
+      generate();
+    });
+    $("venice-key").addEventListener("keydown", function (e) { if (e.key === "Enter") $("use-key").click(); });
   }
 
   /* ---------- Add or change a family recipe ---------- */
@@ -807,14 +950,14 @@
     printOut(list.map(function (x) {
       var r = x.r;
       return '<div class="p-card"><div class="p-card-top"><span>From the kitchen of ' +
-        esc(r.family ? (r.credit || "the family") : "Novella") + "</span><span>" + esc(x.dates.join(", ")) + "</span></div>" +
+        esc(kitchenOf(r)) + "</span><span>" + esc(x.dates.join(", ")) + "</span></div>" +
         "<h2>" + (numberOf(r) ? '<span class="p-no">No. ' + numberOf(r) + "</span> " : "") + esc(r.title) + "</h2>" +
         '<p class="p-meta">' + [r.serves && "Makes " + r.serves].concat(Object.keys(r.times).map(function (k) { return k + ": " + r.times[k]; }))
           .filter(Boolean).map(esc).join(" &middot; ") + "</p>" +
         '<div class="p-cols"><div>' + ingredientList(r) + "</div><ol>" +
         r.steps.map(function (s) { return "<li>" + esc(s) + "</li>"; }).join("") + "</ol></div>" +
         (r.tip ? '<p class="p-tip"><b>Tip:</b> ' + esc(r.tip) + "</p>" : "") +
-        r.notes.map(function (t) { return '<p class="p-tip"><b>' + (r.family ? "Note" : "Mom's note") + ":</b> " + esc(t) + "</p>"; }).join("") +
+        r.notes.map(function (t) { return '<p class="p-tip"><b>' + (r.family || r.searchlight ? "Note" : "Mom's note") + ":</b> " + esc(t) + "</p>"; }).join("") +
         "</div>";
     }).join(""));
   }
@@ -866,5 +1009,5 @@
 
   search();
   route();
-  loadFamily().then(function () { search(); route(); });
+  Promise.all([loadFamily(), loadPictures()]).then(function () { search(); route(); });
 })();

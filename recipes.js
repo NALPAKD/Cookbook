@@ -52,8 +52,8 @@ window.COOKBOOK = {
    "number": 133,
    "title": "Angel Food Cake with Fruit",
    "type": "cakes-pies",
-   "blurb": "",
-   "credit": "Shared by Jennifer Drake, Evans, Georgia",
+   "blurb": "Angel food cake topped with peaches, strawberries, oranges and bananas. Mom marked it 2008, and it's still the dessert I think of when I want something light.",
+   "credit": "",
    "serves": "8 servings",
    "times": {
     "Prep/Total": "10 min"
@@ -97,8 +97,8 @@ window.COOKBOOK = {
    "number": 134,
    "title": "Apple Cream Cheese Pie",
    "type": "cakes-pies",
-   "blurb": "A smooth, fluffy cream-cheese pie with a topping of apples.",
-   "credit": "Shared by Linda Duncan, Junction City, Oregon",
+   "blurb": "A smooth, fluffy cream cheese pie topped with apples. Cherry pie filling makes a good change if you want it a little tarter.",
+   "credit": "",
    "serves": "6–8 servings",
    "times": {
     "Prep": "20 min + chilling"
@@ -141,7 +141,7 @@ window.COOKBOOK = {
    "number": 69,
    "title": "Apricot Mustard-Glazed Pork Roast",
    "type": "pork",
-   "blurb": "",
+   "blurb": "A pork roast with a shiny apricot and mustard glaze, good enough for company. I raise the oven to 375 or 400 to give it a nice finish.",
    "credit": "",
    "serves": "12 servings",
    "times": {
@@ -188,7 +188,7 @@ window.COOKBOOK = {
    "number": 50,
    "title": "Apricot Poppy Chicken",
    "type": "chicken",
-   "blurb": "",
+   "blurb": "Chicken in a sweet apricot, honey and poppy seed sauce. Mom dropped the potatoes from the original and served it her own way.",
    "credit": "",
    "serves": "4 servings",
    "times": {},
@@ -233,8 +233,8 @@ window.COOKBOOK = {
    "number": 1,
    "title": "Bacon Egg Salad Croissants",
    "type": "breakfast",
-   "blurb": "“A great way to jazz up an old favorite.” The creamy filling gets a taste boost from bacon and plenty of crunch from diced celery.",
-   "credit": "Shared by Julee Wallberg, Reno, Nevada",
+   "blurb": "Egg salad made better with bacon and crunchy celery, tucked into croissants. Mom made these for lunch, and I still think it's the best egg salad there is.",
+   "credit": "",
    "serves": "4 servings",
    "times": {
     "Prep": "15 min",
@@ -280,7 +280,7 @@ window.COOKBOOK = {
    "number": 107,
    "title": "Baked Corn",
    "type": "sides",
-   "blurb": "",
+   "blurb": "A creamy baked corn pudding topped with crushed saltines, from a card I've kept for years.",
    "credit": "Handwritten recipe card",
    "serves": "",
    "times": {
@@ -325,7 +325,7 @@ window.COOKBOOK = {
    "number": 70,
    "title": "Baked Ham Salad Sandwiches",
    "type": "pork",
-   "blurb": "",
+   "blurb": "Warm ham salad sandwiches on onion rolls, with melted cheese and egg. Mom always made a double batch, and they never lasted.",
    "credit": "",
    "serves": "4 servings",
    "times": {
@@ -374,7 +374,7 @@ window.COOKBOOK = {
    "number": 108,
    "title": "Baked Macaroni & Cheese",
    "type": "sides",
-   "blurb": "",
+   "blurb": "Macaroni and cheese from a can of soup, with a buttery crumb topping. Quick and cheap, and the kids always cleaned their plates.",
    "credit": "Campbell’s",
    "serves": "4 servings",
    "times": {
@@ -418,8 +418,8 @@ window.COOKBOOK = {
    "number": 51,
    "title": "Barbecue Chicken Burritos",
    "type": "chicken",
-   "blurb": "“We always have the ingredients for these fast burritos on hand. My husband came up with the recipe, and it’s a hit!”",
-   "credit": "Shared by Amy Dando, Apalachin, New York",
+   "blurb": "Barbecue chicken burritos made from things Mom always had on hand. They were fast, and they disappeared even faster.",
+   "credit": "",
    "serves": "4 servings",
    "times": {
     "Prep/Total": "30 min"
@@ -464,8 +464,8 @@ window.COOKBOOK = {
    "number": 11,
    "title": "Beef Soup in a Hurry",
    "type": "soups",
-   "blurb": "Just a few pantry goods stir up this comforting microwave mixture. “I call this ‘throw-together soup.’ Serve it with a green salad and hot bread or rolls.”",
-   "credit": "Shared by Loellen Holley, Topock, Arizona",
+   "blurb": "A few cans from the pantry and the microwave make this soup in minutes. It's a throw-together soup, and Mom served it with a green salad and hot rolls.",
+   "credit": "",
    "serves": "6 servings",
    "times": {
     "Prep/Total": "10 min"
@@ -505,7 +505,7 @@ window.COOKBOOK = {
    "number": 21,
    "title": "Beef ’n’ Rice Enchiladas",
    "type": "beef",
-   "blurb": "",
+   "blurb": "Spanish rice and ground beef rolled into tortillas under enchilada sauce and cheese. Mom could feed all of us with one pan of these, and nobody went to bed hungry.",
    "credit": "Quick Cooking magazine, July/August 2004",
    "serves": "10 enchiladas",
    "times": {
@@ -549,8 +549,8 @@ window.COOKBOOK = {
    "number": 95,
    "title": "Beer-Braised Beef",
    "type": "slow-cooker",
-   "blurb": "“At the end of the day, all we do is cook the noodles and eat!”",
-   "credit": "Geri",
+   "blurb": "Mom doubled it for us and tripled it for company.",
+   "credit": "",
    "serves": "8 servings",
    "times": {
     "Prep": "20 min",
@@ -608,8 +608,8 @@ window.COOKBOOK = {
    "number": 12,
    "title": "Broccoli Cheese Soup",
    "type": "soups",
-   "blurb": "“I was intimidated by making a broccoli cheese soup, but I like it so much, I had to try. The recipe we came up with turned out to be fast and easy.”",
-   "credit": "Shared by Megan",
+   "blurb": "I always thought broccoli cheese soup would be hard to make, but this one is fast and easy. I marked it 2005.",
+   "credit": "",
    "serves": "4 servings",
    "times": {
     "Prep": "10 min",
@@ -657,8 +657,8 @@ window.COOKBOOK = {
    "number": 13,
    "title": "Broccoli-Cheese Noodle Soup",
    "type": "soups",
-   "blurb": "A creamy soup that tastes like you spent all day cooking. Good with a salad and bread, and the leftovers are great spooned over baked potatoes.",
-   "credit": "Shared by Trinity Nicholas, Mt. Carbon, West Virginia",
+   "blurb": "A creamy soup that tastes like it simmered all day. I always make a double batch, because the leftovers are wonderful spooned over a baked potato.",
+   "credit": "",
    "serves": "4–5 servings",
    "times": {
     "Prep/Total": "25 min"
@@ -705,7 +705,7 @@ window.COOKBOOK = {
    "number": 52,
    "title": "Bubba’s Crispy Hot Wings",
    "type": "chicken",
-   "blurb": "",
+   "blurb": "Crispy fried wings with a spicy coating. Mom skipped the butter and hot-sauce dip and served them plain and crunchy, and that's how I still like them.",
    "credit": "",
    "serves": "About 3 dozen",
    "times": {
@@ -755,8 +755,8 @@ window.COOKBOOK = {
    "number": 109,
    "title": "Calico Beans",
    "type": "sides",
-   "blurb": "“You haven’t tasted great beans until you try this recipe.”",
-   "credit": "Shared by Shirley H., Pennsylvania",
+   "blurb": "A mix of beans baked in a sweet, smoky sauce. You haven't tasted good beans until you've tried these.",
+   "credit": "",
    "serves": "",
    "times": {
     "Bake": "35 min"
@@ -801,8 +801,8 @@ window.COOKBOOK = {
    "number": 135,
    "title": "Caramel Chocolate Cake",
    "type": "cakes-pies",
-   "blurb": "A boxed chocolate cake dressed up with butterscotch frosting and a caramel-pecan topping. Easy, yet it looks like it took all day.",
-   "credit": "Shared by Gloria Guadron, Washington, Indiana · Simple & Delicious, May/June 2006",
+   "blurb": "A boxed chocolate cake dressed up with butterscotch frosting and a caramel-pecan topping. Easy to make, but Mom's always looked like it took all day.",
+   "credit": "Simple & Delicious, May/June 2006",
    "serves": "10–12 servings",
    "times": {
     "Prep": "25 min + cooling",
@@ -848,8 +848,8 @@ window.COOKBOOK = {
    "number": 84,
    "title": "Cheese Ravioli with Veggies",
    "type": "seafood",
-   "blurb": "First served with a tossed salad when friends dropped by and stayed for dinner. With the vegetables added it’s a complete meal by itself. “My sons ask for it all the time.”",
-   "credit": "Shared by Amy Burns, Charleston, Illinois",
+   "blurb": "Ravioli and vegetables together make a whole meal by itself. Mom showed me you can use whatever vegetables are in the freezer, and I still make it that way.",
+   "credit": "",
    "serves": "6 servings",
    "times": {
     "Prep/Total": "30 min"
@@ -891,8 +891,8 @@ window.COOKBOOK = {
    "number": 22,
    "title": "Cheese-Topped Beef Bake",
    "type": "beef",
-   "blurb": "“I found two easy recipes with some similar ingredients and decided to combine them. The result is this delicious casserole that my family really enjoys.”",
-   "credit": "Shared by Debbie Schwab, De Pere, Wisconsin",
+   "blurb": "A beef casserole under a blanket of melted cheese. It was always a hit at our table, and I still make it often.",
+   "credit": "",
    "serves": "8–10 servings",
    "times": {
     "Prep": "20 min",
@@ -938,7 +938,7 @@ window.COOKBOOK = {
    "number": 53,
    "title": "Chicken Ham Casserole",
    "type": "chicken",
-   "blurb": "",
+   "blurb": "Chicken, ham and wild rice in a creamy sauce. The clipping called for cheese, but I leave it out; it's rich enough without it.",
    "credit": "Quick Cooking magazine",
    "serves": "6 servings",
    "times": {
@@ -983,7 +983,7 @@ window.COOKBOOK = {
    "number": 54,
    "title": "Chicken Stuffing Casserole",
    "type": "chicken",
-   "blurb": "",
+   "blurb": "Chicken, corn and mushrooms baked with stuffing and cheese. Mom made half a batch, and it was still the kind of supper that filled everyone up.",
    "credit": "",
    "serves": "2 casseroles (6 servings each)",
    "times": {
@@ -1031,7 +1031,7 @@ window.COOKBOOK = {
    "number": 96,
    "title": "Chicken with Mushroom Gravy",
    "type": "slow-cooker",
-   "blurb": "",
+   "blurb": "Chicken in a creamy mushroom gravy from the slow cooker. Mom browned the chicken first and served it with mashed potatoes, and I wouldn't do it any other way.",
    "credit": "Taste of Home’s Simple & Delicious, January/February 2007",
    "serves": "4 servings",
    "times": {
@@ -1078,7 +1078,7 @@ window.COOKBOOK = {
    "number": 55,
    "title": "Chicken à la King",
    "type": "chicken",
-   "blurb": "",
+   "blurb": "Creamy chicken with mushrooms, peppers and pimientos, spooned over toast. Mom turned leftover chicken into something we looked forward to.",
    "credit": "",
    "serves": "4 servings",
    "times": {
@@ -1188,8 +1188,8 @@ window.COOKBOOK = {
    "number": 23,
    "title": "Chili Bean Nacho Skillet",
    "type": "beef",
-   "blurb": "“I drive the kids to lots of activities, so this is one recipe I keep close at hand. Served with salad, it’s a wholesome meal in no time.”",
-   "credit": "Shared by Laurie Hobart, Wisconsin Rapids, Wisconsin",
+   "blurb": "One skillet and a few cans from the pantry, and supper is ready in no time. Serve it with a salad on a busy night.",
+   "credit": "",
    "serves": "6 servings",
    "times": {
     "Prep/Total": "30 min"
@@ -1235,7 +1235,7 @@ window.COOKBOOK = {
    "number": 24,
    "title": "Chili Enchiladas",
    "type": "beef",
-   "blurb": "",
+   "blurb": "Chili, Mexicorn and cheese rolled up in flour tortillas instead of corn. Mom later cut it down for three people and added onions, and that's how I make it now.",
    "credit": "",
    "serves": "6 servings",
    "times": {
@@ -1303,8 +1303,8 @@ window.COOKBOOK = {
    "number": 57,
    "title": "Chinese Chicken Casserole",
    "type": "chicken",
-   "blurb": "",
-   "credit": "Paula Deen",
+   "blurb": "Chicken and crunchy vegetables in a light sauce.",
+   "credit": "",
    "serves": "6–8 servings",
    "times": {
     "Bake": "25–30 min"
@@ -1361,8 +1361,8 @@ window.COOKBOOK = {
    "number": 136,
    "title": "Chocolate Almond Pie",
    "type": "cakes-pies",
-   "blurb": "",
-   "credit": "Recipe courtesy of Paula Deen, Paula’s Home Cooking",
+   "blurb": "Chocolate almond bars and marshmallows melted into a creamy pie. Rich, simple and always a hit.",
+   "credit": "",
    "serves": "6–8 servings",
    "times": {
     "Prep": "5 min",
@@ -1405,7 +1405,7 @@ window.COOKBOOK = {
    "number": 123,
    "title": "Chocolate Caramel Bars",
    "type": "cookies",
-   "blurb": "",
+   "blurb": "Chewy bars with melted caramels, chocolate chips and pecans. The secret ingredient is Miracle Whip, and no one ever guesses.",
    "credit": "Kraft",
    "serves": "",
    "times": {
@@ -1455,8 +1455,8 @@ window.COOKBOOK = {
    "number": 137,
    "title": "Chocolate Peanut Butter Cake",
    "type": "cakes-pies",
-   "blurb": "Chocolate and peanut butter in one moist cake. Kids of every age will be all over this one.",
-   "credit": "Shared by Brenda Melancon, Port Allen, Louisiana",
+   "blurb": "Chocolate and peanut butter in one moist cake. When Mom baked this, we kids hung around the kitchen waiting for a slice.",
+   "credit": "",
    "serves": "12–15 servings",
    "times": {
     "Prep": "10 min",
@@ -1501,7 +1501,7 @@ window.COOKBOOK = {
    "number": 124,
    "title": "Chocolate-Walnut Brownie Cookies",
    "type": "cookies",
-   "blurb": "These moist, fudgy cookies, with a touch of coffee, are loaded with chocolate chips and rich walnuts!",
+   "blurb": "Fudgy cookies with a touch of coffee, loaded with chocolate chips and walnuts.",
    "credit": "Woman’s World",
    "serves": "32 cookies",
    "times": {
@@ -1556,8 +1556,8 @@ window.COOKBOOK = {
    "number": 71,
    "title": "Chops with Fried Rice",
    "type": "pork",
-   "blurb": "A last-minute dinner standout for a busy weeknight: juicy pork chops and savory rice, table-ready in less than half an hour.",
-   "credit": "Shared by Donna Anderson, Amboy, Indiana",
+   "blurb": "Juicy pork chops and savory rice, ready in half an hour. Mom made this on busy weeknights, and it never felt like a rushed dinner.",
+   "credit": "",
    "serves": "4 servings",
    "times": {
     "Prep/Total": "25 min"
@@ -1601,7 +1601,7 @@ window.COOKBOOK = {
    "number": 14,
    "title": "Christmas Clam Chowder",
    "type": "soups",
-   "blurb": "",
+   "blurb": "A creamy, cheesy clam chowder for the holidays. I use four cans of clams instead of three, and canned whole potatoes when I'm short on time.",
    "credit": "Taste of Home, December/January 2007",
    "serves": "9 servings (about 2 quarts)",
    "times": {
@@ -1653,7 +1653,7 @@ window.COOKBOOK = {
    "number": 97,
    "title": "Chunky Beef Vegetable Soup",
    "type": "slow-cooker",
-   "blurb": "",
+   "blurb": "A thick beef and vegetable soup from the slow cooker. I use tomato juice instead of vegetable juice, and canned potatoes to save time.",
    "credit": "Reynolds",
    "serves": "8–9 servings",
    "times": {
@@ -1704,8 +1704,8 @@ window.COOKBOOK = {
    "number": 2,
    "title": "Cinnamon Almond Braid",
    "type": "breakfast",
-   "blurb": "Refrigerated dough makes this pretty braid both flaky and fuss-free, while cinnamon and almonds make it simply delicious!",
-   "credit": "Shared by Nancy Gunn, Orem, Utah",
+   "blurb": "A pretty cinnamon and almond braid made from refrigerated dough. Mom made it look like it came from a bakery.",
+   "credit": "",
    "serves": "1 loaf (10 slices)",
    "times": {
     "Prep": "20 min",
@@ -1760,7 +1760,7 @@ window.COOKBOOK = {
    "number": 15,
    "title": "Clam Chowder",
    "type": "soups",
-   "blurb": "So simple to prepare, yet rich, creamy and filling.",
+   "blurb": "Rich, creamy and filling, and simple enough that Mom taught it to me early on. She always made a double batch, and so do I.",
    "credit": "",
    "serves": "6 servings",
    "times": {
@@ -1805,7 +1805,7 @@ window.COOKBOOK = {
    "number": 3,
    "title": "Club Quesadillas",
    "type": "breakfast",
-   "blurb": "",
+   "blurb": "Everything from a club sandwich (turkey, ham, bacon and provolone) folded into a tortilla. Serve with salsa for a quick lunch.",
    "credit": "",
    "serves": "4 servings",
    "times": {},
@@ -1849,7 +1849,7 @@ window.COOKBOOK = {
    "number": 4,
    "title": "Corn Dog Twists",
    "type": "breakfast",
-   "blurb": "",
+   "blurb": "Hot dogs wrapped in corn bread twists and dusted with Parmesan. The kids thought these were a treat. If you can't find the twists, breadsticks work too.",
    "credit": "",
    "serves": "8 servings",
    "times": {
@@ -1890,7 +1890,7 @@ window.COOKBOOK = {
    "number": 85,
    "title": "Cowboy Spaghetti",
    "type": "seafood",
-   "blurb": "",
+   "blurb": "Spaghetti with bacon, ground sirloin, fire-roasted tomatoes and a splash of beer, topped with sharp cheddar. A hearty, smoky supper.",
    "credit": "",
    "serves": "",
    "times": {},
@@ -1942,7 +1942,7 @@ window.COOKBOOK = {
    "number": 5,
    "title": "Crab Salad Croissants",
    "type": "breakfast",
-   "blurb": "Celery and onion add crunch to a dill-seasoned crab salad tucked into buttery croissants from the grocer’s bakery.",
+   "blurb": "Crab salad with dill, celery and onion, piled into bakery croissants. Mom made these for special lunches, and they always felt fancy.",
    "credit": "",
    "serves": "4 servings",
    "times": {
@@ -1989,8 +1989,8 @@ window.COOKBOOK = {
    "number": 110,
    "title": "Crazy Corn Bread",
    "type": "sides",
-   "blurb": "“This may sound crazy to you, but don’t laugh ’til you try it. It’s crispy good!”",
-   "credit": "Shared by Goldie P., Ohio",
+   "blurb": "This one sounds crazy, but don't laugh until you try it. It comes out crispy and good.",
+   "credit": "",
    "serves": "12 patties",
    "times": {},
    "ingredients": [
@@ -2028,8 +2028,8 @@ window.COOKBOOK = {
    "number": 138,
    "title": "Creamy Banana Treat",
    "type": "cakes-pies",
-   "blurb": "A delicious pudding that serves a lot of people.",
-   "credit": "Shared by Mrs. S. M., Texas",
+   "blurb": "A creamy banana pudding that serves a lot of people. Just right for church suppers and family get-togethers.",
+   "credit": "",
    "serves": "One 9 × 13‑inch pan",
    "times": {},
    "ingredients": [
@@ -2071,8 +2071,8 @@ window.COOKBOOK = {
    "number": 72,
    "title": "Creamy Ham Macaroni",
    "type": "pork",
-   "blurb": "Macaroni jazzed up with ham, cheese and mushrooms. “Sprinkle servings with chopped cashews, if you’d like.”",
-   "credit": "Shared by Beulah Johnston, Fort Myers, Florida",
+   "blurb": "Macaroni with ham, cheese and mushrooms, the kind of supper that got everyone to the table on time. Mom made it often, and I still crave it.",
+   "credit": "",
    "serves": "4 servings",
    "times": {
     "Prep": "20 min",
@@ -2116,8 +2116,8 @@ window.COOKBOOK = {
    "number": 25,
    "title": "Crunchy Beef-Bake Casserole",
    "type": "beef",
-   "blurb": "French-fried onion rings add crunch to this favorite.",
-   "credit": "Shared by Diane Hixon, Niceville, Florida",
+   "blurb": "French-fried onions on top give this casserole its crunch. We kids tried to sneak the onions off the top before Mom could serve it.",
+   "credit": "",
    "serves": "4–6 servings",
    "times": {
     "Bake": "35 min"
@@ -2164,7 +2164,7 @@ window.COOKBOOK = {
    "number": 58,
    "title": "Crunchy Onion Chicken",
    "type": "chicken",
-   "blurb": "",
+   "blurb": "Chicken breasts coated in crushed French fried onions and baked. Just three ingredients, and crunchy every time.",
    "credit": "French’s",
    "serves": "",
    "times": {
@@ -2205,7 +2205,7 @@ window.COOKBOOK = {
    "number": 26,
    "title": "Deep Dish Pizza Casserole",
    "type": "beef",
-   "blurb": "",
+   "blurb": "Shells and cheese topped with beef, peppers, pizza sauce and mozzarella. I wrote this one out by hand because it's a keeper.",
    "credit": "Written out in Mom’s own hand",
    "serves": "4 servings",
    "times": {
@@ -2249,7 +2249,7 @@ window.COOKBOOK = {
    "number": 86,
    "title": "Easy Baked Shrimp or Fish",
    "type": "seafood",
-   "blurb": "",
+   "blurb": "A hot oven and seasoned bread crumbs make this one quick. I serve it over egg noodles. Just make sure the shrimp is completely thawed first.",
    "credit": "Crisco",
    "serves": "4 servings",
    "times": {
@@ -2298,7 +2298,7 @@ window.COOKBOOK = {
    "number": 59,
    "title": "Easy Chicken Pot Pie",
    "type": "chicken",
-   "blurb": "",
+   "blurb": "Chicken pot pie with an easy Bisquick crust. I use two cans of soup and a cup of milk, but don't double the Bisquick.",
    "credit": "Bisquick",
    "serves": "6 servings",
    "times": {
@@ -2351,7 +2351,7 @@ window.COOKBOOK = {
    "number": 98,
    "title": "Extremely Easy Taco Bake",
    "type": "slow-cooker",
-   "blurb": "",
+   "blurb": "Taco night from the slow cooker.",
    "credit": "Reynolds, Velveeta & Hormel",
    "serves": "6 servings",
    "times": {
@@ -2417,7 +2417,7 @@ window.COOKBOOK = {
    "number": 73,
    "title": "Fried Pork Chops",
    "type": "pork",
-   "blurb": "",
+   "blurb": "Buttermilk-soaked chops fried golden in a seasoned crust. Mom taught me to keep a shaker of House Seasoning by the stove, and I've done it ever since.",
    "credit": "The Lady & Sons",
    "serves": "6 servings",
    "times": {},
@@ -2458,7 +2458,7 @@ window.COOKBOOK = {
    "number": 125,
    "title": "Fudgy No-Bake Cookies",
    "type": "cookies",
-   "blurb": "",
+   "blurb": "Chocolate, oats, coconut and peanut butter, cooked on the stove and dropped by spoonfuls. No oven needed.",
    "credit": "",
    "serves": "1 dozen",
    "times": {},
@@ -2502,7 +2502,7 @@ window.COOKBOOK = {
    "number": 60,
    "title": "Garlic Lime Chicken",
    "type": "chicken",
-   "blurb": "A golden-brown chicken with fragrant spices and citrus tang — an excellent way to showcase garlic. Plan ahead: it needs to marinate.",
+   "blurb": "Golden chicken with garlic, spices and lime. It has to marinate, so Mom planned ahead, and the whole house smelled wonderful by supper.",
    "credit": "",
    "serves": "8 servings",
    "times": {
@@ -2552,7 +2552,7 @@ window.COOKBOOK = {
    "number": 111,
    "title": "Garlic Roasted Potatoes",
    "type": "sides",
-   "blurb": "",
+   "blurb": "New potatoes roasted with garlic and artichoke hearts, finished with lemon and parsley. A side dish that feels special.",
    "credit": "Family Circle",
    "serves": "10 servings",
    "times": {
@@ -2600,8 +2600,8 @@ window.COOKBOOK = {
    "number": 27,
    "title": "Glazed Corned Beef",
    "type": "beef",
-   "blurb": "Served each St. Patrick’s Day, even though her family is Dutch. The meat is tender and tasty under a simple tangy glaze, and the leftovers make excellent Reuben sandwiches.",
-   "credit": "Shared by Perlene Hoekema, Lynden, Washington",
+   "blurb": "I make this every St. Patrick's Day. A simple tangy glaze keeps the meat tender, and the leftovers make excellent Reuben sandwiches. Buy the round cut; it's the best.",
+   "credit": "",
    "serves": "12 servings",
    "times": {
     "Simmer": "2½ hr",
@@ -2656,7 +2656,7 @@ window.COOKBOOK = {
    "number": 74,
    "title": "Glazed Ham Steaks",
    "type": "pork",
-   "blurb": "",
+   "blurb": "Mom doubled this every time, and she fried the ham steaks in butter instead of baking them. Brown sugar, pineapple and cherries in the pan meant a good night at our table.",
    "credit": "",
    "serves": "4 servings",
    "times": {
@@ -2702,7 +2702,7 @@ window.COOKBOOK = {
    "number": 61,
    "title": "Grecian Chicken",
    "type": "chicken",
-   "blurb": "The sun-kissed flavors of the Greek Isles burst with every bite in this dish.",
+   "blurb": "Chicken with the sunny flavors of the Greek islands. Mom loved trying new flavors, and this one stayed on her list.",
    "credit": "",
    "serves": "4–6 servings",
    "times": {
@@ -2749,8 +2749,8 @@ window.COOKBOOK = {
    "number": 28,
    "title": "Greek-Style Supper",
    "type": "beef",
-   "blurb": "",
-   "credit": "Shared by Alice Bower, Roanoke, Illinois",
+   "blurb": "Beef, penne, green beans and tomatoes with a hint of cinnamon and a sprinkle of feta. Mom marked this one 2008, and it quickly became a regular.",
+   "credit": "",
    "serves": "4 servings",
    "times": {
     "Prep/Total": "30 min"
@@ -2799,7 +2799,7 @@ window.COOKBOOK = {
    "number": 112,
    "title": "Green Bean Medley",
    "type": "sides",
-   "blurb": "Rich, crunchy pecans and a touch of white wine vinegar liven up this mix of sautéed green beans, plump cherry tomatoes and sweet red onion!",
+   "blurb": "Green beans, cherry tomatoes and red onion with toasted pecans and a splash of vinegar. Broccoli works nicely in place of the beans.",
    "credit": "Woman’s World",
    "serves": "6 servings",
    "times": {
@@ -2846,8 +2846,8 @@ window.COOKBOOK = {
    "number": 29,
    "title": "Hamburger Noodle Bake",
    "type": "beef",
-   "blurb": "“This is an old family favorite I made when my boys were growing up. There were never any leftovers.”",
-   "credit": "Shared by Patricia Teller, Lewiston, Idaho",
+   "blurb": "Beef and noodles baked under buttery crumbs. Mom made one big casserole instead of two, and with all of us at the table, there were never any leftovers.",
+   "credit": "",
    "serves": "2 casseroles (4 servings each)",
    "times": {
     "Prep": "20 min",
@@ -2896,7 +2896,7 @@ window.COOKBOOK = {
    "number": 75,
    "title": "Harvest Ham Steak",
    "type": "pork",
-   "blurb": "Sautéed onion tops this tasty ham steak flavored with apple juice and apple butter.",
+   "blurb": "Ham steak with sautéed onion, apple juice and apple butter. It tastes like fall, and it was one of Mom's quick suppers I always hoped for.",
    "credit": "bestsimplerecipes.com",
    "serves": "4 servings",
    "times": {
@@ -2941,8 +2941,8 @@ window.COOKBOOK = {
    "number": 76,
    "title": "Herbed Pork and Potatoes",
    "type": "pork",
-   "blurb": "A mouth-watering meal-in-one. The recipe makes two rosemary-seasoned tenderloins, so you can serve one with the potatoes for a family dinner and save the other for another meal.",
-   "credit": "Shared by Denise Dowd, St. Louis, Missouri",
+   "blurb": "Rosemary pork tenderloin and potatoes, a whole meal from one pan. Mom kept a smaller version on a card for later years, when there were fewer of us at the table.",
+   "credit": "",
    "serves": "3–4 servings, plus 1 pound leftover pork",
    "times": {
     "Prep": "10 min",
@@ -2993,8 +2993,8 @@ window.COOKBOOK = {
    "number": 99,
    "title": "Herbed Slow Cooker Chicken",
    "type": "slow-cooker",
-   "blurb": "Well-seasoned chicken breasts that cook up moist and tender. “My daughter, who has two young sons to keep up with, shared this great recipe with me several years ago. I’ve made it repeatedly.”",
-   "credit": "Shared by Sundra Hauck, Bogalusa, Louisiana",
+   "blurb": "Well-seasoned chicken breasts that come out moist and tender. Mom marked this one 2017, proof she never stopped finding new favorites.",
+   "credit": "",
    "serves": "4 servings",
    "times": {
     "Cook": "4–5 hr"
@@ -3105,7 +3105,7 @@ window.COOKBOOK = {
    "number": 30,
    "title": "Homestyle Pot Roast",
    "type": "beef",
-   "blurb": "",
+   "blurb": "Pot roast cooked in an oven bag, so the meat stays tender and there's no pan to scrub. The potatoes and carrots cook right along with it.",
    "credit": "Reynolds",
    "serves": "7–9 servings",
    "times": {
@@ -3152,8 +3152,8 @@ window.COOKBOOK = {
    "number": 113,
    "title": "Hot Bacon Dressing",
    "type": "sides",
-   "blurb": "An explosion of flavor in a satisfying hot dressing that’s perfect for strong-flavored greens like spinach.",
-   "credit": "Shared by Connie Simon, Reed City, Michigan",
+   "blurb": "A warm bacon dressing full of flavor, perfect over spinach and other strong greens.",
+   "credit": "",
    "serves": "About 4 cups",
    "times": {},
    "ingredients": [
@@ -3200,7 +3200,7 @@ window.COOKBOOK = {
    "number": 140,
    "title": "Hot Fudge Sundae Cake",
    "type": "cakes-pies",
-   "blurb": "A warm, saucy chocolate cake made right in the slow cooker.",
+   "blurb": "A warm, saucy chocolate cake made right in the slow cooker. Serve it with ice cream for a real sundae.",
    "credit": "",
    "serves": "6 servings",
    "times": {
@@ -3259,8 +3259,8 @@ window.COOKBOOK = {
    "number": 141,
    "title": "Hummingbird Cake",
    "type": "cakes-pies",
-   "blurb": "A big favorite whenever the girls got together for Bunko or book club.",
-   "credit": "Shared by Joanne Burke, Atlanta, Georgia",
+   "blurb": "A big, moist cake that's always a favorite when friends get together.",
+   "credit": "",
    "serves": "16 servings",
    "times": {
     "Prep": "25 min",
@@ -3319,8 +3319,8 @@ window.COOKBOOK = {
    "number": 31,
    "title": "Hungarian Meatball Stew",
    "type": "beef",
-   "blurb": "Serve with buttered noodles.",
-   "credit": "Rachael Ray",
+   "blurb": "A hearty meatball stew for a cold night. Serve it over buttered noodles.",
+   "credit": "",
    "serves": "4 servings",
    "times": {
     "Prep": "20 min",
@@ -3371,7 +3371,7 @@ window.COOKBOOK = {
    "number": 32,
    "title": "Impossible Cheeseburger Pie",
    "type": "beef",
-   "blurb": "",
+   "blurb": "The Bisquick makes its own crust, so there's no pastry to roll out. A whole cheeseburger supper from one pie plate.",
    "credit": "Bisquick",
    "serves": "6 servings",
    "times": {
@@ -3417,8 +3417,8 @@ window.COOKBOOK = {
    "number": 77,
    "title": "In-a-Hurry Hot Dog Dinner",
    "type": "pork",
-   "blurb": "Sliced franks with plenty of green pepper, onions and tomatoes make a well-seasoned entrée. “Serve it plain or over noodles or rice.”",
-   "credit": "Shared by Sandra Small, Niles, Ohio",
+   "blurb": "Hot dogs, green pepper, onions and tomatoes over noodles or rice. On a military paycheck, Mom knew how to turn a package of franks into a real dinner.",
+   "credit": "",
    "serves": "4–6 servings",
    "times": {
     "Prep": "25 min",
@@ -3466,7 +3466,7 @@ window.COOKBOOK = {
    "number": 126,
    "title": "Irresistible Peanut Butter Cookies",
    "type": "cookies",
-   "blurb": "",
+   "blurb": "Classic peanut butter cookies, soft and rich. They really are irresistible.",
    "credit": "Jif",
    "serves": "3 dozen cookies",
    "times": {
@@ -3514,7 +3514,7 @@ window.COOKBOOK = {
    "number": 33,
    "title": "Kodiak Casserole",
    "type": "beef",
-   "blurb": "",
+   "blurb": "A big casserole of beef, noodles and vegetables in a tangy sauce, made to feed a crowd. I usually make half or a third of it and leave out the olives.",
    "credit": "",
    "serves": "",
    "times": {},
@@ -3564,7 +3564,7 @@ window.COOKBOOK = {
    "number": 16,
    "title": "Leftover Ham and Split Pea Soup",
    "type": "soups",
-   "blurb": "",
+   "blurb": "Never throw away a ham bone. Split peas, carrots and onion turn the last of the ham into another good supper.",
    "credit": "Safeway",
    "serves": "",
    "times": {
@@ -3608,8 +3608,8 @@ window.COOKBOOK = {
    "number": 6,
    "title": "Lemon Pull-Apart Coffee Cake",
    "type": "breakfast",
-   "blurb": "“I found this recipe in a newspaper and make it often. I like to bake this coffee cake when unexpected company stops in and I need something speedy to go with a cup of coffee.”",
-   "credit": "Shared by Mary Tallman, Arbor Vitae, Wisconsin",
+   "blurb": "I found this in the newspaper and make it often. It's perfect when company stops in and I need something quick to go with coffee.",
+   "credit": "",
    "serves": "10 servings",
    "times": {
     "Prep/Total": "30 min"
@@ -3659,7 +3659,7 @@ window.COOKBOOK = {
    "number": 114,
    "title": "Lemon Thyme Zucchini Bake",
    "type": "sides",
-   "blurb": "Use lemon thyme to add a sweet, citrus flavor to everything from poultry to vegetables.",
+   "blurb": "Zucchini baked with lemon thyme, bright and fresh. Mom could get any of us to eat our vegetables with a dish like this.",
    "credit": "",
    "serves": "4–6 servings",
    "times": {
@@ -3703,7 +3703,7 @@ window.COOKBOOK = {
    "number": 127,
    "title": "Macadamia Nut Cookies",
    "type": "cookies",
-   "blurb": "",
+   "blurb": "Cookies loaded with macadamia nuts and two kinds of chips. Chopped almonds work just as well when macadamias cost too much.",
    "credit": "",
    "serves": "About 6 dozen",
    "times": {
@@ -3754,7 +3754,7 @@ window.COOKBOOK = {
    "number": 115,
    "title": "Mashed Potatoes Go Gourmet",
    "type": "sides",
-   "blurb": "Six easy ways to dress up a bowl of mashed potatoes.",
+   "blurb": "Six easy ways to dress up a bowl of mashed potatoes, so the same side never gets boring.",
    "credit": "",
    "serves": "",
    "times": {},
@@ -3778,7 +3778,7 @@ window.COOKBOOK = {
    "number": 17,
    "title": "Meatball-Vegetable Soup",
    "type": "soups",
-   "blurb": "",
+   "blurb": "Meatballs, potatoes and vegetables in a French onion broth. I use four cans of onion soup to make it extra hearty.",
    "credit": "",
    "serves": "4 servings",
    "times": {
@@ -3825,7 +3825,7 @@ window.COOKBOOK = {
    "number": 34,
    "title": "Meatballs in Plum Sauce",
    "type": "beef",
-   "blurb": "",
+   "blurb": "Frozen meatballs in a sweet plum, soy and ginger sauce, made right in the microwave. Good for a party or a quick supper.",
    "credit": "",
    "serves": "3 dozen",
    "times": {
@@ -3869,7 +3869,7 @@ window.COOKBOOK = {
    "number": 87,
    "title": "Mexican-Style Ravioli",
    "type": "seafood",
-   "blurb": "Cheese ravioli comes alive in this tangy, slightly sweet tomato sauce. With its tasty mix of seasonings, spinach and beans, the only side to this saucy dish you’ll need is an extra napkin!",
+   "blurb": "Cheese ravioli in a tangy, slightly sweet tomato sauce with spinach. Mom left out the black beans and the salt, and I've never missed them.",
    "credit": "",
    "serves": "4 servings",
    "times": {
@@ -3917,7 +3917,7 @@ window.COOKBOOK = {
    "number": 128,
    "title": "Milk Chocolate Oatmeal Cookies",
    "type": "cookies",
-   "blurb": "",
+   "blurb": "Oatmeal cookies with milk chocolate morsels and a little cinnamon. Add raisins if you like them.",
    "credit": "Nestlé Toll House",
    "serves": "About 3 dozen cookies",
    "times": {
@@ -3970,8 +3970,8 @@ window.COOKBOOK = {
    "number": 129,
    "title": "Mini Burger Cookies",
    "type": "cookies",
-   "blurb": "Can be made up to 3 days ahead. Store in an airtight container at room temperature.",
-   "credit": "Shared by Sandi Conley, Tullahoma, Tennessee",
+   "blurb": "Little cookies made to look like tiny hamburgers. They take a little work, but you can make them up to three days ahead.",
+   "credit": "",
    "serves": "12 cookies",
    "times": {
     "Active": "35 min",
@@ -4015,8 +4015,8 @@ window.COOKBOOK = {
    "number": 100,
    "title": "Moist ’n’ Tender Wings",
    "type": "slow-cooker",
-   "blurb": "",
-   "credit": "Shared by Sharon Morcilio, Joshua Tree, California",
+   "blurb": "Wings slow-cooked in a sweet, tangy chili sauce, then baked in a hot oven for half an hour to crisp up. That last step was Mom's idea, and it makes all the difference.",
+   "credit": "",
    "serves": "About 4 dozen",
    "times": {
     "Cook": "8 hr"
@@ -4065,7 +4065,7 @@ window.COOKBOOK = {
    "number": 35,
    "title": "Mozzarella Beef Roll-Ups",
    "type": "beef",
-   "blurb": "",
+   "blurb": "Pizza sauce, beef and pepperoni wrapped around string cheese in a tortilla. Pizza you can eat with your hands, and the kids love it.",
    "credit": "",
    "serves": "6 servings",
    "times": {
@@ -4110,7 +4110,7 @@ window.COOKBOOK = {
    "number": 18,
    "title": "Neighborhood Bean Soup",
    "type": "soups",
-   "blurb": "",
+   "blurb": "A big pot of beans and a meaty ham bone can feed a family for days. I add a pinch of baking soda to the soaking water and use three whole cans of broth.",
    "credit": "",
    "serves": "",
    "times": {},
@@ -4163,8 +4163,8 @@ window.COOKBOOK = {
    "number": 36,
    "title": "Noodle Skillet",
    "type": "beef",
-   "blurb": "A mild, beefy stovetop supper to satisfy picky palates. “It’s a very quick dish. We love noodles, so it’s one of our favorites.”",
-   "credit": "Shared by Katie Kuepfer, Milverton, Ontario",
+   "blurb": "A mild, beefy noodle supper from one skillet. Mom left out the chili powder so all of us kids would eat it, and we always did.",
+   "credit": "",
    "serves": "4 servings",
    "times": {
     "Prep": "20 min",
@@ -4212,7 +4212,7 @@ window.COOKBOOK = {
    "number": 116,
    "title": "Nutty Orange-Glazed Carrots",
    "type": "sides",
-   "blurb": "Honey, fragrant orange and toasted hazelnuts make these carrots irresistible!",
+   "blurb": "Carrots glazed with honey and orange and topped with toasted hazelnuts. They make a plain supper feel like a holiday.",
    "credit": "",
    "serves": "8 servings",
    "times": {
@@ -4259,7 +4259,7 @@ window.COOKBOOK = {
    "number": 78,
    "title": "Onion Pork Tenderloins",
    "type": "pork",
-   "blurb": "",
+   "blurb": "Onion soup mix and a splash of wine turn pork tenderloin into a Sunday kind of dinner. Mom made the gravy right in the skillet, and that's how she taught me to do it.",
    "credit": "Quick Cooking magazine, July/August 2004",
    "serves": "8–10 servings",
    "times": {
@@ -4303,8 +4303,8 @@ window.COOKBOOK = {
    "number": 19,
    "title": "Oriental Shrimp Soup",
    "type": "soups",
-   "blurb": "A package of ramen noodles speeds up this soup, which gets its color from green onions, shrimp and carrot. “My mother passed the recipe on to me. It’s delicious and so quick to fix.”",
-   "credit": "Shared by Donna Hellinger, Lorain, Ohio",
+   "blurb": "Ramen noodles, shrimp, carrot and green onions make this soup quick to fix. Mom taught me this one, and it's still what I make when I want something warm and fast.",
+   "credit": "",
    "serves": "4 servings",
    "times": {
     "Prep/Total": "15 min"
@@ -4346,7 +4346,7 @@ window.COOKBOOK = {
    "number": 101,
    "title": "Oriental-Style Round Steak",
    "type": "slow-cooker",
-   "blurb": "",
+   "blurb": "Mom doubled the cornstarch, and I've kept that trick.",
    "credit": "",
    "serves": "",
    "times": {
@@ -4404,7 +4404,7 @@ window.COOKBOOK = {
    "number": 62,
    "title": "Oven-Baked Chicken",
    "type": "chicken",
-   "blurb": "",
+   "blurb": "Chicken coated in seasoned Bisquick and baked in butter, crispy without frying. At high altitude, bake 40 minutes, turn it, then about 20 more.",
    "credit": "Bisquick",
    "serves": "5 servings",
    "times": {
@@ -4448,7 +4448,7 @@ window.COOKBOOK = {
    "number": 130,
    "title": "PB&J Cookies",
    "type": "cookies",
-   "blurb": "",
+   "blurb": "Peanut butter cookies with a spot of grape jelly in the middle. Mom made these for us kids, and one bite still takes me back.",
    "credit": "",
    "serves": "6 dozen",
    "times": {
@@ -4498,7 +4498,7 @@ window.COOKBOOK = {
    "number": 88,
    "title": "Pepperoni-Pizza Noodle Bake",
    "type": "seafood",
-   "blurb": "",
+   "blurb": "Ramen noodles, pepperoni, tomatoes and mozzarella under the broiler. Pizza flavor without the pizza price.",
    "credit": "Woman’s World, Quick & Easy",
    "serves": "6 servings",
    "times": {
@@ -4544,7 +4544,7 @@ window.COOKBOOK = {
    "number": 142,
    "title": "Pink Lemonade Pie",
    "type": "cakes-pies",
-   "blurb": "",
+   "blurb": "A cool, creamy pie made with pink lemonade and topped with pink coconut. No baking beyond the crust, so it's perfect for hot days.",
    "credit": "",
    "serves": "1 pie",
    "times": {
@@ -4588,7 +4588,7 @@ window.COOKBOOK = {
    "number": 143,
    "title": "Pistachio Cream Pie",
    "type": "cakes-pies",
-   "blurb": "",
+   "blurb": "Pistachio pudding, cream cheese and pineapple in a graham cracker crust. That pale green pie meant a special occasion at our house.",
    "credit": "",
    "serves": "6–8 servings",
    "times": {
@@ -4631,8 +4631,8 @@ window.COOKBOOK = {
    "number": 79,
    "title": "Pork Chops with Onions",
    "type": "pork",
-   "blurb": "“My mother-in-law shared this simple main dish recipe with me, and it’s always well received.”",
-   "credit": "Shared by Jill Van Nuis, Marietta, Georgia",
+   "blurb": "Pork chops and onions, simple and always welcome. Mom showed me how to brown the chops just right, and I still make them her way.",
+   "credit": "",
    "serves": "6 servings",
    "times": {
     "Prep": "20 min",
@@ -4678,8 +4678,8 @@ window.COOKBOOK = {
    "number": 80,
    "title": "Pork ’n’ Penne Skillet",
    "type": "pork",
-   "blurb": "“I enjoy this one-pan skillet supper because it’s quick, and the cleanup is easy. But best of all, my family enjoys this flavorful and nutritious dinner.”",
-   "credit": "Shared by Dawn Goodison, Rochester, New York",
+   "blurb": "Pork and penne in one pan, quick to make and easy to clean up. Mom liked it for that, and so do I.",
+   "credit": "",
    "serves": "8 servings",
    "times": {
     "Prep/Total": "30 min"
@@ -4730,8 +4730,8 @@ window.COOKBOOK = {
    "number": 117,
    "title": "Praline Yams",
    "type": "sides",
-   "blurb": "",
-   "credit": "Princella",
+   "blurb": "Yams baked under a crunchy topping of pecans, coconut and brown sugar. A sweet side for the holiday table.",
+   "credit": "",
    "serves": "7 servings",
    "times": {
     "Bake": "35–40 min"
@@ -4773,7 +4773,7 @@ window.COOKBOOK = {
    "number": 89,
    "title": "Quesadilla Casserole",
    "type": "seafood",
-   "blurb": "",
+   "blurb": "Tortillas layered with refried beans, green chilies and cheddar, baked in a round cake pan. Cut it into wedges like a pie.",
    "credit": "",
    "serves": "6 servings",
    "times": {
@@ -4821,7 +4821,7 @@ window.COOKBOOK = {
    "number": 90,
    "title": "Ramen Noodle Stir-Fry",
    "type": "seafood",
-   "blurb": "",
+   "blurb": "Ramen noodles and fresh vegetables tossed in a peanut, teriyaki and lime sauce. A cheap package of noodles never tasted so good.",
    "credit": "",
    "serves": "4 servings",
    "times": {
@@ -4874,7 +4874,7 @@ window.COOKBOOK = {
    "number": 63,
    "title": "Ranch Chicken Nuggets",
    "type": "chicken",
-   "blurb": "",
+   "blurb": "Homemade chicken nuggets with a ranch-seasoned panko crust. Mom's were better than any drive-through.",
    "credit": "",
    "serves": "2½ dozen nuggets",
    "times": {
@@ -4920,7 +4920,7 @@ window.COOKBOOK = {
    "number": 118,
    "title": "Ranch Mashed Potatoes",
    "type": "sides",
-   "blurb": "Guaranteed to please, these yummy smashed spuds get loads of zingy flavor from buttermilk, onion, garlic, coarse pepper and a handful of chopped fresh chives!",
+   "blurb": "Mashed potatoes made with buttermilk, garlic, onion and fresh chives. Snip the chives with kitchen scissors; it's much easier.",
    "credit": "Woman’s World",
    "serves": "6 servings",
    "times": {
@@ -4965,7 +4965,7 @@ window.COOKBOOK = {
    "number": 37,
    "title": "Ranchero Supper",
    "type": "beef",
-   "blurb": "",
+   "blurb": "Ground beef, baked beans and corn in a tangy barbecue sauce, with cheese, green onions and tortilla chips on top. Hearty, cheap and quick.",
    "credit": "",
    "serves": "7 servings",
    "times": {
@@ -5011,7 +5011,7 @@ window.COOKBOOK = {
    "number": 64,
    "title": "Roasted Chicken Wings with Lemon and Garlic",
    "type": "chicken",
-   "blurb": "“Ready, set, hut 1, hut 2, BITE!” Score extra points with the football fans on Super Bowl Sunday — quick, easy and guaranteed to keep your home team happy, no matter who wins the big game.",
+   "blurb": "Lemon-garlic wings made for game day. Mom doubled everything except the chicken, so there was always plenty of sauce.",
    "credit": "North American Olive Oil Association",
    "serves": "24 drumettes",
    "times": {
@@ -5063,7 +5063,7 @@ window.COOKBOOK = {
    "number": 81,
    "title": "Roasted Pork Tenderloin and Vegetables",
    "type": "pork",
-   "blurb": "",
+   "blurb": "Pork tenderloin roasted with potatoes, carrots and onion, all in one pan. I give the pork a full hour.",
    "credit": "",
    "serves": "6 servings",
    "times": {
@@ -5111,7 +5111,7 @@ window.COOKBOOK = {
    "number": 65,
    "title": "Rosemary Lime Chicken",
    "type": "chicken",
-   "blurb": "",
+   "blurb": "Chicken breasts pounded thin and cooked with lime, rosemary and wine. Simple and fresh, and Mom made it often.",
    "credit": "",
    "serves": "4 servings",
    "times": {},
@@ -5153,7 +5153,7 @@ window.COOKBOOK = {
    "number": 119,
    "title": "Rosemary Roasted Potatoes",
    "type": "sides",
-   "blurb": "",
+   "blurb": "Red potatoes roasted with rosemary, garlic and butter. Mom taught me this one, and it's still the side dish I make most.",
    "credit": "",
    "serves": "4–6 servings",
    "times": {
@@ -5196,8 +5196,8 @@ window.COOKBOOK = {
    "number": 38,
    "title": "Salisbury Steak with Gravy",
    "type": "beef",
-   "blurb": "“This recipe was shared at a Weight Watchers meeting I attended, and my whole family really enjoys it. I like that it’s so tasty and quick to prepare.”",
-   "credit": "Shared by Danelle Weiher, Verndale, Minnesota",
+   "blurb": "Tasty, quick and light, with a savory gravy. Mom made this one often, and it's still one of my favorite weeknight dinners.",
+   "credit": "",
    "serves": "4 servings",
    "times": {
     "Prep": "15 min",
@@ -5244,7 +5244,7 @@ window.COOKBOOK = {
    "number": 7,
    "title": "Sausage & Egg Breakfast Pizza",
    "type": "breakfast",
-   "blurb": "",
+   "blurb": "Sausage, eggs, hash browns and three colors of peppers on a crescent-roll crust. Breakfast for a crowd, all in one pan.",
    "credit": "Jimmy Dean",
    "serves": "1 pizza (6–8 servings)",
    "times": {
@@ -5294,8 +5294,8 @@ window.COOKBOOK = {
    "number": 8,
    "title": "Sausage Egg Casserole",
    "type": "breakfast",
-   "blurb": "“When we have friends stay overnight, I usually make this tasty breakfast bake, and everyone enjoys it.”",
-   "credit": "Shared by Ramona B., Reedsville, Pennsylvania",
+   "blurb": "Mom made this breakfast bake whenever we had company staying over. The smell of it in the oven is one of my favorite memories.",
+   "credit": "",
    "serves": "",
    "times": {
     "Prep": "20 min + chilling",
@@ -5342,7 +5342,7 @@ window.COOKBOOK = {
    "number": 9,
    "title": "Savory Grilled Cheese",
    "type": "breakfast",
-   "blurb": "A fast homemade herb butter gives these sandwiches wonderful flavor.",
+   "blurb": "A quick herb butter makes an ordinary grilled cheese special. Mom taught me this one, and I've never made grilled cheese the plain way since.",
    "credit": "",
    "serves": "4 servings",
    "times": {
@@ -5385,7 +5385,7 @@ window.COOKBOOK = {
    "number": 39,
    "title": "Sensational Sloppy Joes",
    "type": "beef",
-   "blurb": "",
+   "blurb": "Sloppy joes with a secret: a spoonful of grape jelly in the sauce. Mom's were the best, and I've never had better anywhere.",
    "credit": "Taste of Home’s Simple & Delicious, September/October 2006",
    "serves": "5 servings",
    "times": {
@@ -5433,7 +5433,7 @@ window.COOKBOOK = {
    "number": 40,
    "title": "Sirloin in Wine Sauce",
    "type": "beef",
-   "blurb": "",
+   "blurb": "Tender sirloin in a mushroom and red wine sauce over linguine. Mom always made a double batch, and it felt like a restaurant dinner at home.",
    "credit": "",
    "serves": "4 servings",
    "times": {
@@ -5484,7 +5484,7 @@ window.COOKBOOK = {
    "number": 120,
    "title": "Six Ways to Dress Up Frozen Veggies",
    "type": "sides",
-   "blurb": "Give frozen veggies 5-star flavor!",
+   "blurb": "A few simple tricks give frozen vegetables five-star flavor. Good food doesn't have to come fresh from the garden.",
    "credit": "",
    "serves": "",
    "times": {},
@@ -5508,8 +5508,8 @@ window.COOKBOOK = {
    "number": 82,
    "title": "Skillet Franks",
    "type": "pork",
-   "blurb": "Kids will have as much fun helping to make this all-in-one supper as they will eating it! It’s a cinch to clean up, since it all cooks in one skillet. A super-easy standby for decades.",
-   "credit": "Shared by Ruth Noland, San Jose, California",
+   "blurb": "An all-in-one hot dog supper from a single skillet. It was easy, cheap and fun, and Mom let us kids help make it.",
+   "credit": "",
    "serves": "6 servings",
    "times": {
     "Prep/Total": "30 min"
@@ -5557,8 +5557,8 @@ window.COOKBOOK = {
    "number": 102,
    "title": "Slow Cooker Beef Stroganoff",
    "type": "slow-cooker",
-   "blurb": "A favorite traditional dinner becomes fuss-free in the slow cooker: tender sirloin in flavorful gravy over noodles, a home-style meal your whole family will request time and again.",
-   "credit": "Shared by Lisa VanEgmond, Annapolis, Illinois",
+   "blurb": "Tender sirloin in a rich gravy over noodles, and the slow cooker does all the work. Start it in the morning and come home to dinner.",
+   "credit": "",
    "serves": "12–16 servings",
    "times": {
     "Prep": "25 min",
@@ -5610,7 +5610,7 @@ window.COOKBOOK = {
    "number": 103,
    "title": "Slow Cooker Brisket of Beef",
    "type": "slow-cooker",
-   "blurb": "",
+   "blurb": "Brisket cooked low and slow with onions. Instead of chili sauce, I spread mustard and brown sugar on top and give it a short bake in a hot oven.",
    "credit": "",
    "serves": "10–12 servings",
    "times": {
@@ -5666,7 +5666,7 @@ window.COOKBOOK = {
    "number": 104,
    "title": "Slow Cooker Pot Roast",
    "type": "slow-cooker",
-   "blurb": "",
+   "blurb": "A whole pot roast dinner with potatoes and carrots, all in the slow cooker. When I'm cooking just for myself, I use the single-serving version on the card beside it.",
    "credit": "Reynolds",
    "serves": "6–8 servings (3 ounces each)",
    "times": {
@@ -5715,7 +5715,7 @@ window.COOKBOOK = {
    "number": 105,
    "title": "Slow-Cooked Spaghetti Sauce",
    "type": "slow-cooker",
-   "blurb": "",
+   "blurb": "Mom taught me to make it just this way.",
    "credit": "",
    "serves": "6–8 servings",
    "times": {
@@ -5798,7 +5798,7 @@ window.COOKBOOK = {
    "number": 66,
    "title": "Smothered Chicken Breasts",
    "type": "chicken",
-   "blurb": "",
+   "blurb": "Chicken breasts smothered in bacon, brown-sugar onions and melted cheese. Mom made it look easy, and when I finally made it myself, I found out it really is.",
    "credit": "",
    "serves": "4 servings",
    "times": {},
@@ -5842,8 +5842,8 @@ window.COOKBOOK = {
    "number": 83,
    "title": "South Carolina–Style Ribs",
    "type": "pork",
-   "blurb": "Some of the best country-style pork ribs you’ll ever eat, especially when cooked on a grill. The same sauce is good on barbecued chicken, too.",
-   "credit": "Shared by Karen Conklin, Santee, South Carolina",
+   "blurb": "Country-style ribs in a tangy sauce, best on the grill. In later years Mom scaled it down for two, and the sauce is just as good on chicken.",
+   "credit": "",
    "serves": "6–8 servings",
    "times": {
     "Bake": "3–3¼ hr"
@@ -5904,8 +5904,8 @@ window.COOKBOOK = {
    "number": 67,
    "title": "Southern Fried Chicken",
    "type": "chicken",
-   "blurb": "Her Grandmother Paul always seasoned the chicken and let it sit in the refrigerator as long as time permitted — at least 2 to 3 hours. Always use small chickens; a Dutch oven works best for frying.",
-   "credit": "Paula Deen, The Lady & Sons",
+   "blurb": "Season the chicken and let it rest in the refrigerator a few hours before frying. Mom finished hers in a 350° oven for half an hour, and nobody made fried chicken like she did.",
+   "credit": "The Lady & Sons",
    "serves": "4 servings",
    "times": {},
    "ingredients": [
@@ -5951,7 +5951,7 @@ window.COOKBOOK = {
    "number": 10,
    "title": "Special Egg Salad",
    "type": "breakfast",
-   "blurb": "",
+   "blurb": "Cream cheese makes this egg salad extra creamy. I add sweet pickles and onions, and I always make a double batch.",
    "credit": "",
    "serves": "6 servings",
    "times": {
@@ -6001,8 +6001,8 @@ window.COOKBOOK = {
    "number": 91,
    "title": "Spicy Italian Spaghetti Sauce",
    "type": "seafood",
-   "blurb": "",
-   "credit": "Betty Baker",
+   "blurb": "A real simmered meat sauce with plum tomatoes, basil and oregano. Let it cook low and slow, and serve it with plenty of Parmesan.",
+   "credit": "",
    "serves": "6–8 servings",
    "times": {
     "Simmer": "1 hr 15 min"
@@ -6055,8 +6055,8 @@ window.COOKBOOK = {
    "number": 106,
    "title": "Stamp-of-Approval Spaghetti Sauce",
    "type": "slow-cooker",
-   "blurb": "“My father is very opinionated, especially about food, and this sauce received his stamp of approval.”",
-   "credit": "Shared by Melissa Taylor, Higley, Arizona",
+   "blurb": "A thick, hearty spaghetti sauce that gets everyone's stamp of approval. Make a big batch and freeze some for another night.",
+   "credit": "",
    "serves": "12 servings (3 quarts)",
    "times": {
     "Prep": "30 min",
@@ -6113,7 +6113,7 @@ window.COOKBOOK = {
    "number": 41,
    "title": "Steaks with Peppery Onions",
    "type": "beef",
-   "blurb": "",
+   "blurb": "Rib eye steaks topped with onions cooked down in butter and pepper. A special-occasion dinner at our house, and Mom made it look simple.",
    "credit": "",
    "serves": "4 servings",
    "times": {
@@ -6157,7 +6157,7 @@ window.COOKBOOK = {
    "number": 144,
    "title": "Strawberry Pie",
    "type": "cakes-pies",
-   "blurb": "Plan ahead — it needs time to chill.",
+   "blurb": "Strawberry pie that needs time to chill, so Mom made it ahead. Waiting for it was the hardest part.",
    "credit": "Quick Cooking magazine",
    "serves": "6–8 servings",
    "times": {
@@ -6203,7 +6203,7 @@ window.COOKBOOK = {
    "number": 42,
    "title": "Swedish Meatballs",
    "type": "beef",
-   "blurb": "",
+   "blurb": "Stuffing mix holds these meatballs together, and a little sour cream makes the gravy rich and creamy. It tastes like company food but costs next to nothing.",
    "credit": "Kraft Foods",
    "serves": "8 servings (4 meatballs each)",
    "times": {
@@ -6248,7 +6248,7 @@ window.COOKBOOK = {
    "number": 43,
    "title": "Taco Casserole",
    "type": "beef",
-   "blurb": "",
+   "blurb": "Bow tie pasta, taco beef, salsa and cheese under crushed tortilla chips. Mom made it in a 13 × 9 pan instead of the small one, because one small pan was never enough for us.",
    "credit": "",
    "serves": "7 servings",
    "times": {
@@ -6296,7 +6296,7 @@ window.COOKBOOK = {
    "number": 44,
    "title": "Taco Lasagna",
    "type": "beef",
-   "blurb": "",
+   "blurb": "Tortillas instead of noodles, layered with beef, black beans and cheese. When Mom made this, the pan was empty before anyone thought about seconds.",
    "credit": "Quick Cooking magazine, March/April 2003",
    "serves": "9 servings",
    "times": {
@@ -6344,8 +6344,8 @@ window.COOKBOOK = {
    "number": 45,
    "title": "Taco Pie",
    "type": "beef",
-   "blurb": "Taco fixings and biscuit mix make a zippy main-dish pie. “You can make it as mild or as hot as you’d like. It goes well with a tossed salad.”",
-   "credit": "Shared by Shelly Winkleblack, Interlaken, New York",
+   "blurb": "Taco fixings baked in a biscuit-mix crust. Mom made it as mild or as hot as we could stand, and it always came with a tossed salad.",
+   "credit": "",
    "serves": "6 servings",
    "times": {
     "Ready in": "45 min"
@@ -6391,7 +6391,7 @@ window.COOKBOOK = {
    "number": 46,
    "title": "Tasty Taco Bake",
    "type": "beef",
-   "blurb": "",
+   "blurb": "Layers of tortilla chips, chili, cheese and toppings in one dish. Mom skipped the green chilies, so it was mild enough for everyone at the table.",
    "credit": "",
    "serves": "4 servings",
    "times": {
@@ -6454,7 +6454,7 @@ window.COOKBOOK = {
    "number": 68,
    "title": "Tex-Mex Chicken Wraps",
    "type": "chicken",
-   "blurb": "",
+   "blurb": "Black beans, corn, peppers and rotisserie chicken rolled up in big tortillas. I make half the salsa; it's plenty.",
    "credit": "",
    "serves": "6 servings",
    "times": {
@@ -6513,8 +6513,8 @@ window.COOKBOOK = {
    "number": 47,
    "title": "Texas Tamale Pie",
    "type": "beef",
-   "blurb": "A spicy southwestern casserole with just four ingredients. At church dinners there are never any leftovers.",
-   "credit": "Shared by Billy Boyd, Houston, Texas",
+   "blurb": "Four ingredients and fifteen minutes in the oven. I always use two cans of tamales instead of one, and there's never a bite left over.",
+   "credit": "",
    "serves": "6 servings",
    "times": {
     "Prep/Total": "25 min"
@@ -6557,8 +6557,8 @@ window.COOKBOOK = {
    "number": 92,
    "title": "Thai Shrimp and Noodles",
    "type": "seafood",
-   "blurb": "A speedy dish that gets its Asian flavor from ginger, peanut butter, sesame oil, soy sauce and red pepper flakes. “My family loves it.”",
-   "credit": "Shared by Ramona Heflin, Farmersville, Ohio",
+   "blurb": "Ginger, peanut butter, sesame oil and soy sauce give these noodles their flavor. Mom was never afraid to try something new, and this one became a family favorite.",
+   "credit": "",
    "serves": "6 servings",
    "times": {
     "Prep/Total": "30 min"
@@ -6610,8 +6610,8 @@ window.COOKBOOK = {
    "number": 121,
    "title": "Thousand Island Dressing",
    "type": "sides",
-   "blurb": "“It’s almost unbelievable that a dressing so easy to fix can be so good.” Darlis got the recipe from her daughter, Debbi.",
-   "credit": "Shared by Darlis Wilfer, Phelps, Wisconsin",
+   "blurb": "It's hard to believe a dressing this easy can be so good. Once you make your own, you won't go back to the bottle.",
+   "credit": "",
    "serves": "2½ cups",
    "times": {},
    "ingredients": [
@@ -6646,7 +6646,7 @@ window.COOKBOOK = {
    "number": 131,
    "title": "Toll House Famous Fudge",
    "type": "cookies",
-   "blurb": "",
+   "blurb": "Creamy chocolate fudge with marshmallows and nuts. A holiday treat that never fails.",
    "credit": "Nestlé Toll House",
    "serves": "49 pieces",
    "times": {
@@ -6692,7 +6692,7 @@ window.COOKBOOK = {
    "number": 20,
    "title": "Tortellini Chowder",
    "type": "soups",
-   "blurb": "",
+   "blurb": "Bacon, potatoes and tortellini in a creamy chowder. I double the milk and water so there's plenty to go around.",
    "credit": "",
    "serves": "4 servings",
    "times": {
@@ -6741,8 +6741,8 @@ window.COOKBOOK = {
    "number": 122,
    "title": "Twice-Baked Potato Casserole",
    "type": "sides",
-   "blurb": "This casserole is loaded with many palate-pleasing flavors.",
-   "credit": "Shared by Betty Miars, Anna, Ohio",
+   "blurb": "All the flavor of twice-baked potatoes without stuffing each one. Perfect for holidays and company.",
+   "credit": "",
    "serves": "6–8 servings",
    "times": {
     "Bake": "20 min"
@@ -6786,8 +6786,8 @@ window.COOKBOOK = {
    "number": 48,
    "title": "Two-Gravy Corn Bread Casserole",
    "type": "beef",
-   "blurb": "“How can you top two different types of gravy in one recipe? This casserole is as indulgent as it is delicious: stick-to-your-ribs, down-home comfort food at its finest.”",
-   "credit": "Justina’s casserole",
+   "blurb": "Two kinds of gravy and a corn bread topping make this real stick-to-your-ribs comfort food.",
+   "credit": "",
    "serves": "6 servings",
    "times": {
     "Bake": "15–20 min"
@@ -6834,7 +6834,7 @@ window.COOKBOOK = {
    "number": 93,
    "title": "Upside Down Ravioli",
    "type": "seafood",
-   "blurb": "",
+   "blurb": "Jumbo shells stuffed with beef and spinach, baked in tomato-basil sauce. Italian sausage makes a nice change from the ground beef.",
    "credit": "Barilla",
    "serves": "4–6 servings",
    "times": {
@@ -6888,8 +6888,8 @@ window.COOKBOOK = {
    "number": 132,
    "title": "Vanilla Chip Cherry Cookies",
    "type": "cookies",
-   "blurb": "“A nice change from chocolate chip cookies.”",
-   "credit": "Shared by Margaret Wilson, Hemet, California",
+   "blurb": "A nice change from chocolate chip cookies. Mom always added a cup of nuts, and the cookie jar never stayed full for long.",
+   "credit": "",
    "serves": "4½ dozen",
    "times": {
     "Prep": "15 min",
@@ -6940,7 +6940,7 @@ window.COOKBOOK = {
    "number": 94,
    "title": "Vegetarian Burrito Bake",
    "type": "seafood",
-   "blurb": "",
+   "blurb": "Rice, black beans, spinach and cheese rolled into burritos and baked in enchilada sauce. Mom proved a meatless supper could fill us up just as well.",
    "credit": "Shoestring Chef",
    "serves": "6 servings",
    "times": {
@@ -6988,8 +6988,8 @@ window.COOKBOOK = {
    "number": 145,
    "title": "Warm Old-Fashioned Peach Cake",
    "type": "cakes-pies",
-   "blurb": "Goes together in less time than it takes to preheat the oven. The peaches start on top, but watch through the oven window as the cake bakes up around them.",
-   "credit": "Recipe by cookbook author Marlene Sorosky",
+   "blurb": "It goes together in less time than it takes to heat the oven. The peaches start on top, then the cake bakes up around them.",
+   "credit": "",
    "serves": "12 servings",
    "times": {
     "Bake": "50 min at 350°"
@@ -7034,7 +7034,7 @@ window.COOKBOOK = {
    "number": 49,
    "title": "Zesty Beef-Stuffed Peppers",
    "type": "beef",
-   "blurb": "",
+   "blurb": "Green peppers stuffed with beef, rice, corn and tomatoes and topped with mozzarella. A colorful, filling supper that doesn't cost much.",
    "credit": "Shoestring Chef",
    "serves": "6 servings",
    "times": {
@@ -7077,5 +7077,6 @@ window.COOKBOOK = {
    },
    "image": "img/dishes/zesty-beef-stuffed-peppers.jpg"
   }
- ]
+ ],
+ "signed": true
 };
